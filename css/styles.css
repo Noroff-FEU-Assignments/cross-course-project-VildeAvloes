@@ -1,25 +1,64 @@
 body {
   font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 h1,
 h2,
+nav a,
 .cta {
-  font-family: "Segoe UI", Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: bold;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-nav {
-  background-color: #2e2e2e;
+header{
+    display: flex;
+    align-items: self-end;
+    flex-direction: row;
 }
 
+.header-sign {
+    display: flex;
+    align-items: self-end;
+}
+
+
+nav ul {
+    padding: 0px
+}
+
+nav li{
+  display: inline-block;
+}
+
+nav a{
+font-size: 20px;
+color: #ededed;
+}
+
+nav a:hover{
+    color: #a10e00;
+}
+
+header, 
+footer {
+    background-color: #2e2e2e;
+    color: #ededed;
+}
 /*Links*/
 a {
-  color: #e86826;
-  font-family: "Montserrat", sans-serif;
-  text-transform: italic;
+text-decoration: none; 
 }
+
 header a {
   color: #ededed;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .cta {
@@ -27,9 +66,57 @@ header a {
   color: #ededed;
   font size: 1em;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 20px;
+  padding: 15px 80px;
+}
+
+.cta a {
+    text-transform: uppercase;
 }
 
 .cta-large {
     padding: 10px 40px;
+}
+
+.link-style {
+    color: #e86826;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+/*Home Page*/
+.background-homepage {
+background-image: url(../images/home-background.jpg);
+background-size: cover;
+max-width: 100%;
+background-repeat: no-repeat;
+}
+
+.welcome {
+    background: rgba(237,237,237,0.95);
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px 60px;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.welcome__content {
+    margin: 5px;
+    flex: 1;
+}
+
+.welcome__signup,
+.welcome__readmore {
+    padding:20px;
 }

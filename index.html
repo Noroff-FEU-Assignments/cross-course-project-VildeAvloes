@@ -13,34 +13,46 @@
 
     <link href="css/styles.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="background-homepage">
     <header>
-      <nav>
+      <div class="logo">
         <a href="index.html">
           <img
-            src="images/home-header.jpg"
+            src="images/home-header.png"
             alt="Square Eyes Logo"
-            height="119px"
-            width="270px"
+            height="89px"
+            width="240px"
           />
         </a>
+      </div>
+      <nav>
         <ul>
           <li><a href="allfilms.html">All Films</a></li>
           <li><a href="payperview.html">Pay Per View</a></li>
           <li><a href="myaccount.html">My Account</a></li>
           <li><a href="search.html">Search</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
-          <li><a href="signin.html">Sign In</a></li>
+          <div class="header-sign">
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+          </div>
+        
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Connecting Film-Lovers</h1>
-      <p>
-        A place where film-makers and film-watchers meet. Any time, any day.
-      </p>
-      <a href="signup.html" class="cta cta-large">Sign Up</a>
-      <a href="readmore.html">Read More >></a>
+      <section class="welcome">
+        <div class="welcome__content">
+          <h1>Connecting Film-Lovers</h1>
+          <p>A place where film-makers and film-watchers meet.</p>
+          <p>Any time, any day.</p>
+<Section class="welcome__signup">
+  <a href="signup.html" class="cta cta-large">Sign Up</a>
+</Section>            
+      <section class="welcome__readmore">
+        <a href="readmore.html" class="link-style">Read More >></a>
+        </div>
+      </section>
     </main>
+    <footer>Copyright &copy;</footer>
   </body>
 </html>
