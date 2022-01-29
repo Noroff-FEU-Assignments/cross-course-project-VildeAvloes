@@ -113,7 +113,15 @@ background-repeat: no-repeat;
     flex: 1;
 }
 
+.welcome__text {
+  padding-top: 10px;
+}
+
+.welcome__signup {
+  padding-top: 15px;
+}
+
 .welcome__signup,
 .welcome__readmore {
-    padding:20px;
+    margin:30px;
 }
