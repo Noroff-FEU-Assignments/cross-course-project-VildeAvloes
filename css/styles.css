@@ -16,25 +16,21 @@ nav a,
   text-align: center;
 }
 
-header{
+header {
     display: flex;
-    align-items: self-end;
-    flex-direction: row;
+    align-items: flex-end;
+    padding: 3px;
 }
 
-.header-sign {
-    display: flex;
-    align-items: self-end;
+.nav__second {
+    margin-left: auto;
 }
 
+  nav li {
+    display: inline;
+    padding: 0px;
+  }
 
-nav ul {
-    padding: 0px
-}
-
-nav li{
-  display: inline-block;
-}
 
 nav a{
 font-size: 20px;
@@ -44,6 +40,7 @@ color: #ededed;
 nav a:hover{
     color: #a10e00;
 }
+
 
 header, 
 footer {
@@ -75,7 +72,7 @@ header a {
 }
 
 .cta-large {
-    padding: 10px 40px;
+    padding: 10px 45px;
 }
 
 .link-style {
@@ -86,7 +83,7 @@ header a {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
   }
   
 
@@ -99,16 +96,16 @@ background-repeat: no-repeat;
 }
 
 .welcome {
-    background: rgba(237,237,237,0.95);
+    background: rgba(237,237,237,0.97);
     border-radius: 20px;
     text-align: center;
-    padding: 20px 60px;
+    padding: 20px 30px;
     display: flex;
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
 }
 
 .welcome__content {
