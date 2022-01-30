@@ -133,21 +133,22 @@ footer {
   width: 70%;
 }
 
-.welcome__content {
+.welcome-content {
   margin: 5px;
   flex: 1;
 }
 
-.welcome__text {
-  padding-top: 10px;
+.welcome-text {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.welcome__signup {
+.welcome-signup {
   padding-top: 15px;
 }
 
-.welcome__signup,
-.welcome__readmore {
+.welcome-signup,
+.welcome-readmore {
   margin: 30px;
 }
 
