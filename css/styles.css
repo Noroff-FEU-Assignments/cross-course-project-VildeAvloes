@@ -204,9 +204,9 @@ footer {
 }
 
 @media (min-width: 1000px) {
-  header {
-    align-items: flex-end;
-  }
+header {
+  align-items: center;
+}
 
   nav {
     display: flex;
