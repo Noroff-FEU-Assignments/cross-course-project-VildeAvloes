@@ -18,7 +18,7 @@
   width: 70%;
 }
 
-.welcome-content {
+.information {
   margin: 5px;
   flex: 1;
 }
@@ -28,7 +28,9 @@
   margin-bottom: 5px;
 }
 
-.welcome-signup {
+.welcome-signup,
+.filmwatcher,
+.filmmaker {
   padding-top: 15px;
 }
 
@@ -38,6 +40,11 @@
 }
 
 /*Read more*/
+.information h2 {
+  text-transform: none;
+}
+
+/*Search*/
 
 @media (min-widht: 650px) {
   .container {

@@ -112,49 +112,15 @@ footer {
   padding: 5px;
 }
 
-/*Home Page*/
-.background-homepage {
-  background-image: url(../images/home-background.jpg);
-  background-size: cover;
-  max-width: 100%;
-  background-repeat: no-repeat;
-}
 
-.welcome {
-  background: rgba(237, 237, 237, 0.97);
-  border-radius: 20px;
-  text-align: center;
-  padding: 20px 30px;
-  display: flex;
-  margin-top: 150px;
-  margin-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-.welcome-content {
-  margin: 5px;
-  flex: 1;
-}
-
-.welcome-text {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.welcome-signup {
-  padding-top: 15px;
-}
-
-.welcome-signup,
-.welcome-readmore {
-  margin: 30px;
-}
 
 @media (max-width: 440px) {
   h1 {
     font-size: 1.2em;
+  }
+
+  h2 {
+    font-size: 1.1em;
   }
 }
 
@@ -196,10 +162,6 @@ footer {
   .nav-left,
   .nav-right {
     margin: 3px;
-  }
-
-  .welcome {
-    width: 50%;
   }
 }
 
