@@ -41,6 +41,16 @@
   margin: 30px;
 }
 
+/*Sign Up*/
+.sign-up {
+  flex-direction: column;
+}
+
+.filmmaker {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 /*Read more*/
 .information h2 {
   text-transform: none;
@@ -76,7 +86,8 @@
   align-self: left;
 }
 
-.search-icon {
+.search-icon,
+.x-icon {
   color: #2e2e2e;
 }
 

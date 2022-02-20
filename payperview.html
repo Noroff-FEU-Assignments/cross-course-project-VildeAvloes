@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Square Eyes | Pay Per View</title>
-    <meta name="description" content="Watch a film without an account now!" />
+    <title>Square Eyes | Home</title>
+    <meta name="description" content="Watch a film for NOK39/film." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,17 +19,31 @@
         <ul class="nav-left">
           <li><a href="index.html">Home</a></li>
           <li><a href="allfilms.html">All Films</a></li>
-          <li><a href="payperview.html" class="active">Pay Per View</a></li>
+          <li><a href="payperview.html">Pay Per View</a></li>
           <li><a href="search.html">Search</a></li>
         </ul>
         <ul class="nav-right">
           <li><a href="myaccount.html">My Account</a></li>
-          <li><a href="signup.html">Sign Up</a></li>
+          <li><a href="/signup/signup.html">Sign Up</a></li>
           <li><a href="signin.html">Sign In</a></li>
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <form method="post">
+        <div>
+          <h1>Pay Per View</h1>
+          <p>Watch film NOK 39/film.</p>
+          <input type="text" placeholder="Name on Card" name="cardname" id="cardname" />
+          <input type="text" placeholder="Card Number" name="cardnumber" id="cardnumber" />
+          <input type="text" placeholder="MM/YY" name="expmonth" id="expmonth" />
+          <input type="text" placeholder="CVC/CVV" name="securitynumber" id="securitynumber" />
+          <label for="paymentdetails">Remember Payment Details</label>
+          <input type="checkbox" name="paymentdetails" id="paymentdetails" />
+        </div>
+        <a href="film.html" class="cta">Watch Now</a>
+      </form>
+    </main>
     <footer>Copyright &copy;</footer>
   </body>
 </html>
