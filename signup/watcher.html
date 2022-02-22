@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/links.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/49864f171b.js" crossorigin="anonymous"></script>
   </head>
   <body class="background-homepage"> 
@@ -34,26 +36,29 @@
       </nav>
     </header>
     <main >
-     <h1>Sign Up Watcher</h1>
-     <div class="form-wrapper">
-      <form action="../myaccount-watcher.html" method="get">
-        <input type="text" placeholder="Full Name" id="name" name="name" >
-        <input type="text" placeholder="Username" name="nickname" id="nickname" >
-        <input type="email" placeholder="Email" name="email" id="email" >
-        <input type="password" placeholder="Password" name="password" id="password" >
-        <input type="password" placeholder="Confirm Password" name="password" id="password">
+     <div class="container form-wrapper">
+      <h1>Sign Up Watcher</h1>
+       <section>
+        <form action="../myaccount-watcher.html" method="get">
+          <input type="text" placeholder="Full Name" id="name" name="name" >
+          <input type="text" placeholder="Username" name="nickname" id="nickname" >
+          <input type="text" placeholder="Email" name="email" id="email" >
+          <input type="password" placeholder="Password" name="password" id="password" >
+          <input type="password" placeholder="Confirm Password" name="password" id="password">
+        </section>
+        <section>
+          <h2>Payment Details</h2>
+          <p>Unlimited watching NOK 99/NOK.<br>Remenber that you can change your subscription at your account page.</p>
+        </section>
+       <section>
+         <input type="text" placeholder="Name on Card" name="cardname" id="cardname" >
+         <input type="text" placeholder="Card Number" name="cardnumber" id="cardnumber">
+         <input type="text" placeholder="MM/YY" name="expmonth" id="expmonth">
+         <input type="text" placeholder="CVC/CVV" name="securitynumber" id="securitynumber">
+         <button class="cta">Sign Up</button>
+       </section>
+       </form>
       </div>
-      <h2>Payment</h2>
-      <p>Unlimited watching NOK 99/NOK.</p>
-      <p>Remenber that you can change your subscription at your account page.</p>
-      <div>
-        <input type="text" placeholder="Name on Card" name="cardname" id="cardname" >
-        <input type="text" placeholder="Card Number" name="cardnumber" id="cardnumber">
-        <input type="text" placeholder="MM/YY" name="expmonth" id="expmonth">
-        <input type="text" placeholder="CVC/CVV" name="securitynumber" id="securitynumber">
-        <button class="cta">Sign Up</button>
-      </div>
-      </form>
     </main>
     <footer>Copyright &copy;</footer>
   </body>

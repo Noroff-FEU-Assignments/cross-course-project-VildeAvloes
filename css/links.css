@@ -1,0 +1,47 @@
+a {
+  text-decoration: none;
+}
+
+header a {
+  color: #ededed;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.cta {
+  background-color: #a10e00;
+  color: #ededed;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+  height: 25px;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 15px;
+  padding: 15px 40px;
+}
+
+.cta:hover {
+  background-color: #ededed;
+  color: #a10e00;
+  border: 3px;
+  border-style: solid;
+  border-color: #a10e00;
+}
+
+.link-style {
+  color: #e86826;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.link-style:hover {
+  font-size: 18px;
+}
+
+@media (min-width: 440px) {
+  .cta {
+    padding: 15px 80px;
+    font-size: 1.2em;
+  }
+}
