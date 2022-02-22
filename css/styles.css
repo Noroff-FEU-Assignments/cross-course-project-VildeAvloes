@@ -17,6 +17,7 @@ nav a,
 }
 
 h3 {
+  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-style: italic;
 }
 
@@ -121,10 +122,16 @@ input {
   flex: row;
 }
 
+#expmonth,
+#securitynumber {
+  margin: 5px;
+}
+
 .sign-in {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 .form-wrapper {
@@ -154,11 +161,11 @@ input[type="submit"] {
   }
 
   h2 {
-    font-size: 1.1em;
+    font-size: 1em;
   }
 
   h3 {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 

@@ -13,12 +13,17 @@ header a {
   color: #ededed;
   display: inline-block;
   text-align: center;
-  width: 100px;
+  width: 80px;
   height: 25px;
   font-size: 1em;
   text-transform: uppercase;
   border-radius: 15px;
   padding: 15px 40px;
+  box-sizing: content-box;
+}
+
+.cta-large {
+  width: 100px;
 }
 
 .cta:hover {
@@ -27,6 +32,19 @@ header a {
   border: 3px;
   border-style: solid;
   border-color: #a10e00;
+}
+
+.cta-yellow {
+  background-color: #e86826;
+  color: #ededed;
+}
+
+.cta-yellow:hover {
+  background-color: #ededed;
+  color: #e86826;
+  border: 3px;
+  border-style: solid;
+  border-color: #e86826;
 }
 
 .link-style {

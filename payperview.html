@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,500&display=swap" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/links.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/49864f171b.js" crossorigin="anonymous"></script>
   </head>
   <body class="background-homepage">
@@ -31,17 +33,20 @@
     </header>
     <main>
       <form action="film.html" method="get">
-        <div>
-          <h1>Pay Per View</h1>
+        <section class="container form-wrapper">
+          <div>
+            <h1>Pay Per View</h1>
+          </div>
           <p>Watch film NOK 39/film.</p>
           <input type="text" placeholder="Name on Card" name="cardname" id="cardname" />
           <input type="text" placeholder="Card Number" name="cardnumber" id="cardnumber" />
-          <input type="text" placeholder="MM/YY" name="expmonth" id="expmonth" />
-          <input type="text" placeholder="CVC/CVV" name="securitynumber" id="securitynumber" />
-          <label for="paymentdetails">Remember Payment Details</label>
-          <input type="checkbox" name="paymentdetails" id="paymentdetails" />
+          <div class="input-small">
+            <input type="text" placeholder="MM/YY" name="expmonth" id="expmonth" size="7" />
+            <input type="text" placeholder="CVC/CVV" name="securitynumber" id="securitynumber" size="7" />
+          </div>
+          <div><label for="paymentdetails">Remember Payment Details</label> <input type="checkbox" name="paymentdetails" id="paymentdetails" /></div>
           <button class="cta">Watch Now</button>
-        </div>
+        </section>
       </form>
     </main>
     <footer>Copyright &copy;</footer>

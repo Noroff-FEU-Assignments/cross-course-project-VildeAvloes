@@ -5,5 +5,27 @@ main {
 .account-wrapper {
   display: flex;
   flex-flow: column wrap;
+  margin-left: 20px;
+  text-transform: capitalize;
   color: #ededed;
+}
+
+.account-wrapper h1,
+.account-wrapper h2 {
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.account-wrapper li {
+  display: block;
+  padding: 0px 5px 0px 5px;
+}
+
+.account-wrapper a {
+  color: #ededed;
+  font-style: bold;
+}
+
+.account-wrapper a:hover {
+  color: #a10e00;
 }
