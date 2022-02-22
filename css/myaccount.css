@@ -1,0 +1,9 @@
+main {
+  background-color: #2e2e2e;
+}
+
+.account-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  color: #ededed;
+}

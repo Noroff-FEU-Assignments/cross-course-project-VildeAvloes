@@ -16,6 +16,10 @@ nav a,
   text-align: center;
 }
 
+h3 {
+  font-style: italic;
+}
+
 input[type="text"],
 input[type="password"],
 ::placeholder {
@@ -101,6 +105,11 @@ footer {
 }
 
 /*Forms*/
+form {
+  display: flex;
+  flex-direction: column;
+}
+
 input {
   border: 2px solid #2e2e2e;
   border-radius: 15px;
@@ -108,9 +117,8 @@ input {
   padding: 10px;
 }
 
-button {
-  margin: 10px;
-  padding: 10px;
+.input-small {
+  flex: row;
 }
 
 .sign-in {
@@ -121,8 +129,14 @@ button {
 
 .form-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
+}
+
+input[type="submit"] {
+  border: 0px;
+  width: 100px;
+  height: 25px;
 }
 
 @media (min-width: 440px) {
@@ -141,6 +155,10 @@ button {
 
   h2 {
     font-size: 1.1em;
+  }
+
+  h3 {
+    font-size: 1em;
   }
 }
 
