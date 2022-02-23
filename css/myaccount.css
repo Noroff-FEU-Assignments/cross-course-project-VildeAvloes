@@ -55,10 +55,3 @@ h2 {
 footer {
   background-color: #6a6a6a;
 }
-
-@media (min-width: 690px);
- {
-  .account-list li {
-    font-size: 1.8em;
-  }
-}
