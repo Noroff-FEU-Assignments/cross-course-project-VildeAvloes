@@ -1,24 +1,38 @@
 main {
-  background-color: #2e2e2e;
+  background: linear-gradient(#2e2e2e, #6a6a6a);
+}
+
+.myaccount {
+  display: flex;
+  flex-direction: row;
+}
+
+.account-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h1,
+h2 {
+  text-align: left;
+  margin-left: 10px;
 }
 
 .account-wrapper {
   display: flex;
   flex-flow: column wrap;
+  justify-content: space-between;
+  flex: auto;
+  margin-top: 20px;
   margin-left: 20px;
-  text-transform: capitalize;
   color: #ededed;
-}
-
-.account-wrapper h1,
-.account-wrapper h2 {
-  text-align: left;
-  text-transform: capitalize;
 }
 
 .account-wrapper li {
   display: block;
   padding: 0px 5px 0px 5px;
+  margin-block: 25px;
 }
 
 .account-wrapper a {
@@ -28,4 +42,23 @@ main {
 
 .account-wrapper a:hover {
   color: #a10e00;
+}
+
+.account-list {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-style: bold;
+  font-size: 1.1em;
+  padding-top: 20px;
+  padding-left: 0px;
+}
+
+footer {
+  background-color: #6a6a6a;
+}
+
+@media (min-width: 690px);
+ {
+  .account-list li {
+    font-size: 1.8em;
+  }
 }
