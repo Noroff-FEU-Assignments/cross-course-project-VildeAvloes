@@ -1,7 +1,3 @@
-main {
-  background: linear-gradient(#2e2e2e, #6a6a6a);
-}
-
 .myaccount {
   display: flex;
   flex-direction: row;
@@ -52,10 +48,6 @@ h2 {
   font-size: 1.1em;
   padding-top: 20px;
   padding-left: 0px;
-}
-
-footer {
-  background-color: #6a6a6a;
 }
 
 @media (min-width: 440px) {

@@ -2,6 +2,17 @@
 @import "imports/forms.css";
 @import "imports/general.css";
 
+.background-image {
+  background-image: url(../images/home-background.jpg);
+  background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}
+
+.background-color {
+  background: linear-gradient(#2e2e2e, #6a6a6a);
+}
+
 body {
   font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100vh;
@@ -94,6 +105,9 @@ footer {
   padding: 5px;
 }
 
+.footer-light {
+  background-color: #6a6a6a;
+}
 .container {
   background: rgba(237, 237, 237, 0.97);
   border-radius: 20px;
