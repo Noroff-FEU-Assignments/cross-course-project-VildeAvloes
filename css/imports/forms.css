@@ -1,0 +1,66 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  border: 2px solid #2e2e2e;
+  border-radius: 15px;
+  margin: 0px 10px 10px 10px;
+  padding: 10px;
+}
+
+.input-small {
+  flex: row;
+}
+
+input[type="text"],
+input[type="password"],
+::placeholder {
+  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  color: #2e2e2e;
+}
+
+::placeholder {
+  text-transform: uppercase;
+}
+
+#expmonth,
+#securitynumber {
+  margin: 5px;
+}
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+input[type="submit"] {
+  border: 0px;
+  width: 100px;
+  height: 25px;
+}
+
+.payment-checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+@media (min-width: 440px) {
+  button {
+    width: 100%;
+  }
+  ::placeholder {
+    font-size: 1.2em;
+  }
+}

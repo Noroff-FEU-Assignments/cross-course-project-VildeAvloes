@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Square Eyes | My Account</title>
+    <title>Square Eyes | Sign Up</title>
     <meta name="description" content="Sign up to Square Eyes as a watcher and support unique filmmakers in their journey." />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,41 +15,42 @@
     <link href="css/myaccount.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/49864f171b.js" crossorigin="anonymous"></script>
   </head>
-  <body class="background-homepage"> 
+  <body class="background-image"> 
     <header>
       <a href="../index.html" class="logo"><img src="../images/home-header.png" alt="Square Eyes Logo" height="69px" width="220px" /> </a>
-    <label for="hamburger-menu"><i class="fa-solid fa-bars fa-2x"></i></label>
+    <label for="hamburger-menu"><i class="fa-solid fa-bars fa-2x hamburger-icon"></i></label>
       <input type="checkbox" id="hamburger-menu" />
   </a>
     <nav>
         <ul class="nav-left">
-          <li><a href="index.html">Home</a></li>
-            <li><a href="allfilms.html">All Films</a></li>
-            <li><a href="payperview.html">Pay Per View</a></li>
+          <li><a href="../index.html">Home</a></li>
+            <li><a href="../allfilms.html">All Films</a></li>
+            <li><a href="../payperview.html">Pay Per View</a></li>
             <li><a href="../search.html">Search</a></li>
         </ul>
         <ul class="nav-right">
-          <li><a href="myaccount.html">My Account</a></li>
+          <li><a href="../myaccount-watcher.html">My Account</a></li>
           <li><a href="/signup/signup.html">Sign Up</a></li>
-          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="../signin.html">Sign In</a></li>
         </ul>
       </nav>
     </header>
-    <main >
-      <section class="account-wrapper"> 
-        <div>
-          <h1>My Account</h1>
-          <h2>Ola Nordmann</h2>
-          <h3>Filmwatcher</h3>
-        </div>
-        <ul>
-          <li><a href="">Profile</a></li>
-          <li><a href="">Subscription Details</a></li>
-          <li><a href="">Watchlist</a></li>
-          <li><a href="">Recently Watched</a></li>
-          <li><a href="">My Ratings</a></li>
-        </ul> 
-      </section>
+    <main>
+        <div class="account-wrapper"> 
+          <div class="account-profile">
+            <i class="fa-solid fa-user fa-3x"></i>
+            <div class="account-name">
+              <h1>Ola Nordmann</h1>
+            </div>
+          </div>
+            <ul class="account-list">
+              <li><a href="">Profile</a></li>
+              <li><a href="">Subscription Details</a></li>
+              <li><a href="">Watchlist</a></li>
+              <li><a href="">Recently Watched</a></li>
+              <li><a href="">My Ratings</a></li>
+            </ul> 
+          </div>
     </main>
     <footer>Copyright &copy;</footer>
   </body>

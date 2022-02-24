@@ -1,24 +1,8 @@
-.background-homepage {
+.background-image {
   background-image: url(../images/home-background.jpg);
   background-size: cover;
   max-width: 100%;
   background-repeat: no-repeat;
-}
-
-.information {
-  margin: 5px;
-  flex: 1;
-}
-
-.welcome-text {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-.welcome-signup,
-.filmwatcher,
-.filmmaker {
-  padding-top: 15px;
 }
 
 .welcome-signup,
@@ -44,52 +28,4 @@
 .filmmaker {
   margin-top: 15px;
   margin-bottom: 30px;
-}
-
-/*Search*/
-.search-wrapper {
-  flex-flow: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.search-box {
-  width: 80%;
-  height: auto;
-}
-
-.search-input {
-  border-radius: 10px;
-  border: 3px;
-  border-style: solid;
-  border-color: #2e2e2e;
-  font-family: "Montserrat";
-  font-size: 1em;
-  text-align: left;
-  padding: 10px 20px;
-  width: 75%;
-  align-self: left;
-}
-
-.search-icon {
-  color: #2e2e2e;
-}
-
-.search-icon:hover {
-  color: #a10e00;
-}
-
-@media (min-width: 440px) {
-  .search-box {
-    width: 90%;
-  }
-
-  .search-input {
-    width: 80%;
-    font-size: 1.2em;
-  }
-
-  .button-wrapper {
-    margin-right: auto;
-  }
 }

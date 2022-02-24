@@ -23,7 +23,8 @@ header a {
 }
 
 .cta-large {
-  width: 100px;
+  width: 110px;
+  padding-top: 15px;
 }
 
 .cta:hover {
@@ -61,5 +62,9 @@ header a {
   .cta {
     padding: 15px 80px;
     font-size: 1.2em;
+  }
+
+  .button-wrapper {
+    margin-right: auto;
   }
 }

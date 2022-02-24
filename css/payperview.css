@@ -1,0 +1,6 @@
+.background-image {
+  background-image: url(../images/payperview-background.jpg);
+  background-size: cover;
+  max-width: 100%;
+  background-repeat: no-repeat;
+}

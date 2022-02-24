@@ -25,7 +25,7 @@ h2 {
   justify-content: space-between;
   flex: auto;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 40px;
   color: #ededed;
 }
 
@@ -38,9 +38,11 @@ h2 {
 .account-wrapper a {
   color: #ededed;
   font-style: bold;
+  font-size: 1.2em;
 }
 
 .account-wrapper a:hover {
+  font-size: 1.6em;
   color: #a10e00;
 }
 
@@ -54,4 +56,14 @@ h2 {
 
 footer {
   background-color: #6a6a6a;
+}
+
+@media (min-width: 440px) {
+  .account-wrapper a {
+    font-size: 1.4em;
+  }
+
+  .account-wrapper a:hover {
+    font-size: 1.8em;
+  }
 }
