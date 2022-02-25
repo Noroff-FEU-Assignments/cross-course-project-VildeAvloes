@@ -6,12 +6,6 @@ h2 {
   margin-bottom: 20px;
 }
 
-main {
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-bottom: 30px;
-}
-
 .cta-cat {
   height: 55px;
   text-align: center;
@@ -28,15 +22,19 @@ main {
 .categories {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  grid-template-rows: repeat(10, 1fr);
   grid-template-areas:
-    "header-cat1 header-cat1 header-cat1 header-cat1"
-    "product1 product2 product3 product4"
-    "header-cat2 header-cat2 header-cat2 header-cat2"
-    "product5 product6 product7 product8"
-    "product9 product10 product11 product12"
-    "product13 product14 product15 product16";
+    ". header-cat1 header-cat1 ."
+    ". product1 product2 ."
+    ". product3 product4 ."
+    ". header-cat2 header-cat2 ."
+    ". product5 product6 ."
+    ". product7 product8 ."
+    ". product9 product10 ."
+    ". product11 product12 ."
+    ". product13 product14 ."
+    ". product15 product16 .";
   gap: 20px;
   align-items: center;
 }
@@ -110,4 +108,28 @@ main {
 
 .product16 {
   grid-area: product16;
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .cta {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 1050px) {
+  .categories {
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: repeat (6, 1fr);
+    grid-template-areas:
+      ". header-cat1 header-cat1 header-cat1 header-cat1 ."
+      ". product1 product2 product3 product4 ."
+      ". header-cat2 header-cat2 header-cat2 header-cat2 ."
+      ". product5 product6 product7 product8 ."
+      ". product9 product10 product11 product12 ."
+      ". product13 product14 product15 product16 .";
+  }
 }
