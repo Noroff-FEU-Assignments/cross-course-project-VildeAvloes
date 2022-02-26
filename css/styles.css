@@ -55,7 +55,7 @@ header {
 
 nav {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 96px;
   background-color: #2e2e2e;
   z-index: 1000;

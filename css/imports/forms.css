@@ -39,6 +39,12 @@ input[type="text email password"],
   margin: 5px;
 }
 
+input[type="submit"] {
+  border: 0px;
+  width: 100px;
+  height: 25px;
+}
+
 .signin-form {
   display: flex;
   flex-direction: column;
@@ -52,13 +58,7 @@ input[type="text email password"],
   align-items: center;
 }
 
-input[type="submit"] {
-  border: 0px;
-  width: 100px;
-  height: 25px;
-}
-
-.payment-checkbox {
+.payment-details {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -67,8 +67,5 @@ input[type="submit"] {
 @media (min-width: 440px) {
   button {
     width: 100%;
-  }
-  ::placeholder {
-    font-size: 1.1em;
   }
 }
