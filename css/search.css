@@ -22,14 +22,19 @@
   border-style: solid;
   border-color: #2e2e2e;
   font-family: "Montserrat";
-  font-size: 1em;
+  font-size: 0.8em;
   text-align: left;
   padding: 10px 20px;
-  width: 75%;
+  width: 100%;
   align-self: left;
 }
 
+input.search-input {
+  margin: 0px;
+}
+
 .search-icon {
+  padding-left: 20px;
   color: #2e2e2e;
 }
 
@@ -37,13 +42,12 @@
   color: #a10e00;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 550px) {
   .search-box {
     width: 90%;
   }
 
   .search-input {
-    width: 80%;
     font-size: 1.2em;
   }
 }

@@ -17,6 +17,12 @@ input {
 
 .form__inputsmall {
   width: 115px;
+  margin: 0px 5px 10px 5px;
+}
+
+input#expmonth,
+input#securitynumber {
+  margin-top: 0px;
 }
 
 .input-small {
@@ -62,6 +68,7 @@ input[type="submit"] {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  padding: 10px;
 }
 
 @media (min-width: 440px) {

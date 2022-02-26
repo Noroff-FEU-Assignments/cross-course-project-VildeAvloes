@@ -25,10 +25,10 @@ img.preview-image {
 .preview-wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: 0.1fr 1fr 1fr 0.2fr;
-  grid-template-rows: 0.5fr repeat(6, 1fr);
+  grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0.2fr repeat(6, 1fr);
   grid-template-areas:
-    ". icon-back icon-back ."
+    ". back-icon . ."
     ". film1 film2 ."
     ". film3 film4 ."
     ". film5 film6 ."
@@ -37,14 +37,13 @@ img.preview-image {
     ". film11 film12 .";
   gap: 10px;
   margin-bottom: 30px;
-  margin-left: auto;
   justify-content: center;
 }
 
-.icon-back {
-  grid-area: icon-back;
-  margin-left: 20px;
-  margin-top: 20px;
+.back-icon {
+  grid-area: back-icon;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .film1 {
@@ -107,9 +106,6 @@ img.preview-image {
     height: 151px;
   }
 
-  .preview-wrapper {
-  }
-
   .preview-container a {
     font-size: 1.2em;
   }
@@ -157,7 +153,7 @@ img.preview-image {
       ". film10 film11 film12 .";
   }
 
-  .icon-back {
+  .back-back {
     margin-left: 20px;
   }
 }
