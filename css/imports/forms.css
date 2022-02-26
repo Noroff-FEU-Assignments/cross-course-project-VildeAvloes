@@ -15,6 +15,10 @@ input {
   width: 244px;
 }
 
+.form__inputsmall {
+  width: 115px;
+}
+
 .input-small {
   flex: row;
 }
