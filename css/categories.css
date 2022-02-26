@@ -37,6 +37,12 @@ h2 {
     ". product15 product16 .";
   gap: 20px;
   align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.cat-button {
+  justify-self: center;
 }
 
 .header-cat1 {
@@ -123,7 +129,7 @@ h2 {
 @media (min-width: 1050px) {
   .categories {
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
-    grid-template-rows: repeat (6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
       ". header-cat1 header-cat1 header-cat1 header-cat1 ."
       ". product1 product2 product3 product4 ."

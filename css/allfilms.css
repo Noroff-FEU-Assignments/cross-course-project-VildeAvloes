@@ -1,0 +1,180 @@
+.preview-container,
+.preview-button {
+  background: rgba(237, 237, 237, 0.97);
+  border-radius: 20px;
+  height: 121px;
+  width: 159px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
+.preview-container a {
+  color: #2e2e2e;
+  font-size: 1em;
+  font-family: "Trebuchet MS", Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img.preview-image {
+  border-radius: 20px 20px 0px 0px;
+  height: 91px;
+  width: 159px;
+}
+
+.preview-wrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 0.1fr 1fr 1fr 0.2fr;
+  grid-template-rows: 0.5fr repeat(6, 1fr);
+  grid-template-areas:
+    ". icon-back icon-back ."
+    ". film1 film2 ."
+    ". film3 film4 ."
+    ". film5 film6 ."
+    ". film7 film8 ."
+    ". film9 film10 ."
+    ". film11 film12 .";
+  gap: 10px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.icon-back {
+  grid-area: icon-back;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.film1 {
+  grid-area: film1;
+}
+
+.film2 {
+  grid-area: film2;
+}
+
+.film3 {
+  grid-area: film3;
+}
+
+.film4 {
+  grid-area: film4;
+}
+
+.film5 {
+  grid-area: film5;
+}
+
+.film6 {
+  grid-area: film6;
+}
+
+.film7 {
+  grid-area: film7;
+}
+
+.film8 {
+  grid-area: film8;
+}
+
+.film9 {
+  grid-area: film9;
+}
+
+.film10 {
+  grid-area: film10;
+}
+
+.film11 {
+  grid-area: film11;
+}
+
+.film12 {
+  grid-area: film12;
+}
+
+@media (min-width: 460px) {
+  img.preview-image {
+    width: 189px;
+    height: 121px;
+  }
+
+  .preview-container,
+  .preview-button {
+    width: 189px;
+    height: 151px;
+  }
+
+  .preview-wrapper {
+  }
+
+  .preview-container a {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 600px) {
+  img.preview-image {
+    width: 219px;
+    height: 151px;
+  }
+
+  .preview-container,
+  .preview-button {
+    width: 219px;
+    height: 171px;
+  }
+
+  .preview-wrapper {
+    row-gap: 20px;
+  }
+}
+
+@media (min-width: 650px) {
+  img.preview-image {
+    width: 239px;
+    height: 171px;
+  }
+
+  .preview-container,
+  .preview-button {
+    width: 239px;
+    height: 201px;
+  }
+}
+
+@media (min-width: 810px) {
+  .preview-wrapper {
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr repeat(4, 1fr);
+    grid-template-areas:
+      "back-icon . . . ."
+      ". film1 film2 film3."
+      ". film4 film5 film6 ."
+      ". film7 film8 film9 ."
+      ". film10 film11 film12 .";
+  }
+
+  .icon-back {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1040px) {
+  img.preview-image {
+    width: 339px;
+    height: 251px;
+  }
+
+  .preview-container,
+  .preview-button {
+    width: 339px;
+    height: 291px;
+  }
+
+  .preview-wrapper {
+    gap: 20px;
+  }
+}

@@ -8,6 +8,7 @@ input {
   border-radius: 15px;
   margin: 0px 10px 10px 10px;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .input-small {
@@ -54,6 +55,10 @@ input[type="submit"] {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+}
+
+input [type="text email password"] {
+  width: 80%;
 }
 
 @media (min-width: 440px) {

@@ -1,6 +1,5 @@
 @import "imports/links.css";
 @import "imports/forms.css";
-@import "imports/general.css";
 
 .background-image {
   background-image: url(../images/home-background.jpg);
@@ -38,6 +37,10 @@ h3 {
 
 i {
   color: #ededed;
+}
+
+i:hover {
+  color: #a10e00;
 }
 
 header {
