@@ -60,6 +60,10 @@ input[type="submit"] {
   justify-content: space-between;
 }
 
+input [type="text email password"] {
+  width: 80%;
+}
+
 @media (min-width: 440px) {
   button {
     width: 100%;
