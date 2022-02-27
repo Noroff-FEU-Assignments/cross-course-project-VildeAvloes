@@ -5,7 +5,7 @@ p {
 }
 
 main {
-  height: 100vh;
+  height: 105vh;
 }
 
 .film-wrapper {
@@ -37,6 +37,7 @@ img.film-image {
   position: absolute;
   z-index: 1;
   top: 85%;
+  width: 65%;
   margin: 0px auto;
 }
 
@@ -61,10 +62,25 @@ img.film-image {
   margin: 10px;
 }
 
-img.film-image {
-  max-width: 70%;
+@media (min-width: 500px) {
+  main {
+    height: 110vh;
+  }
+
+  img.film-image {
+    width: 80%;
+    height: 80%;
+  }
 }
 
-.film-info {
-  max-width: 60%;
+@media (min-width: 800px) {
+  main {
+    height: 120vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    height: 140vh;
+  }
 }
