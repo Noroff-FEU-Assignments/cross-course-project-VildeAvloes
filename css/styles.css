@@ -43,9 +43,10 @@ h3 {
   font-style: italic;
 }
 
-.logo {
+img.logo {
   width: 220px;
   height: 69px;
+  margin-top: 5px;
 }
 
 header {
