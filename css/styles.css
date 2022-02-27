@@ -10,11 +10,11 @@
 }
 
 .background-color {
-  background: linear-gradient(#2e2e2e, #6a6a6a);
+  background: var(--gradient-grey);
 }
 
 body {
-  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-paragraph);
   min-height: 100vh;
   margin: 0px;
   display: grid;
@@ -25,14 +25,14 @@ h1,
 h2,
 nav a,
 .cta {
-  font-family: "Trebuchet MS", Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-header);
   font-style: bold;
   text-transform: uppercase;
   text-align: center;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-paragraph);
   font-style: italic;
 }
 
@@ -42,6 +42,11 @@ i {
 
 i:hover {
   color: var(--red);
+}
+
+.logo {
+  width: 220px;
+  height: 69px;
 }
 
 header {
@@ -116,7 +121,7 @@ footer {
   background: var(--opacity-light-grey);
   border-radius: 20px;
   text-align: center;
-  padding: 20px 30px;
+  padding: 20px;
   display: flex;
   margin: 150px auto 200px auto;
   width: 70%;

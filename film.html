@@ -16,7 +16,7 @@
   </head>
   <body class="background-color"> 
     <header> 
-      <a href="index.html" class="logo"><img src="images/home-header.png" alt="Square Eyes Logo" height="69px" width="220px" /> </a>
+      <a href="index.html"><img src="images/home-header.png" alt="Square Eyes Logo" class="logo"/> </a>
       <label for="hamburger-menu"><i class="fas fa-bars fa-2x hamburger-icon" ></i></label>
       <input type="checkbox" id="hamburger-menu" /> </a>
     <nav>
@@ -35,29 +35,34 @@
     </header>
     <main>
       <a href="allfilms.html"><i class="fa-solid fa-angle-left fa-2x back-icon"></i></a>
-      <div class= "film-wrapper">
-        <h1>Stairway To Heaven</h1>
+      <div class="film-wrapper">
+        <div class="film-title">
+          <h1>Stairway To Heaven</h1>
           <h2>By Zed Lepplin</h2>
           <p>Drama</p>
-          <div class="filminfo-container">
-            <div>
-              <img src="images/stairwaytoheaven.jpg" alt="Stairway To Heaven" class="film-image one">
-            </div>
-            <div class="container two">
-              <div class="star-rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <img src="images/stairwaytoheaven.jpg" alt="Stairway To Heaven" class="film-image">
+        <div class="container film-info">
+            <div class="int-line">
+              <div>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
               </div>
-              <p>In this film we follow a mans last days on earth. We get to know his story, his achievements and regrets before he takes the stairway to heaven.</p>
-              <a href="film.html" class="cta">Watch Now</a>
-              <a href="payperview.html" class="cta cta-yellow">Pay Per View</a>
+              <div>
+                <i class="fa-solid fa-plus fa-2x add-icon"></i>
+              </div>
             </div>
+          <p>In this film we follow a mans last days on earth. We get to know his story, his achievements and regrets before he takes the stairway to heaven.</p>
+          <div class="film-buttons">
+            <a href="film.html" class="cta">Watch Now</a>
+            <a href="payperview.html" class="cta cta-yellow cta-film">Pay Per View</a>
           </div>
-      </div> 
+        </div>
+    </div>
     </main>
-    <footer>Copyright &copy;</footer>
+    <footer class="footer-light">Copyright Square Eyes 2022 &copy;</footer>
   </body>
 </html>

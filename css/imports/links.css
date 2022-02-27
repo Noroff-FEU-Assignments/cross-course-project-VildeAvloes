@@ -11,19 +11,17 @@ header a {
 .cta {
   background-color: var(--red);
   color: var(--light-grey);
-  display: inline-block;
-  text-align: center;
-  width: 80px;
-  height: 25px;
   font-size: 1em;
   text-transform: uppercase;
   border-radius: 15px;
+  position: relative;
+  display: inline-block;
   padding: 15px 40px;
   box-sizing: content-box;
 }
 
 .cta-large {
-  width: 110px;
+  width: 100px;
   padding-top: 15px;
 }
 

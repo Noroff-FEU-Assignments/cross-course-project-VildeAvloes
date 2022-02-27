@@ -12,17 +12,17 @@ input {
 }
 
 .form__input {
-  width: 244px;
+  width: 264px;
 }
 
 .form__inputsmall {
-  width: 115px;
-  margin: 0px 5px 10px 5px;
+  width: 130px;
+  margin: 0px 0px 10px 0px;
 }
 
 input#expmonth,
 input#securitynumber {
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .input-small {
@@ -31,7 +31,7 @@ input#securitynumber {
 
 input[type="text email password"],
 ::placeholder {
-  font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--font-paragraph);
   font-size: 1.2em;
   color: var(--grey);
 }
@@ -71,8 +71,16 @@ input[type="submit"] {
   padding: 10px;
 }
 
-@media (min-width: 440px) {
-  button {
-    width: 100%;
+.cta-form {
+  margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+  .form__input {
+    width: 204px;
+  }
+
+  .form__inputsmall {
+    width: 100px;
   }
 }

@@ -2,8 +2,8 @@
 .preview-button {
   background: var(--opacity-light-grey);
   border-radius: 20px;
-  height: 121px;
-  width: 159px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,15 +11,18 @@
 }
 
 .preview-container a {
+  font-family: var(--font-header);
   color: var(--dark-grey);
   font-size: 1em;
-  font-family: "Trebuchet MS", Helvetica, Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 5px;
 }
 
 img.preview-image {
   border-radius: 20px 20px 0px 0px;
-  height: 91px;
-  width: 159px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .preview-wrapper {
@@ -94,54 +97,13 @@ img.preview-image {
   grid-area: film12;
 }
 
-@media (min-width: 460px) {
-  img.preview-image {
-    width: 189px;
-    height: 121px;
-  }
-
-  .preview-container,
-  .preview-button {
-    width: 189px;
-    height: 151px;
-  }
-
+@media (max-width: 400px) {
   .preview-container a {
-    font-size: 1.2em;
+    font-size: 0.8em;
   }
 }
 
-@media (min-width: 600px) {
-  img.preview-image {
-    width: 219px;
-    height: 151px;
-  }
-
-  .preview-container,
-  .preview-button {
-    width: 219px;
-    height: 171px;
-  }
-
-  .preview-wrapper {
-    row-gap: 20px;
-  }
-}
-
-@media (min-width: 650px) {
-  img.preview-image {
-    width: 239px;
-    height: 171px;
-  }
-
-  .preview-container,
-  .preview-button {
-    width: 239px;
-    height: 201px;
-  }
-}
-
-@media (min-width: 810px) {
+@media (min-width: 700px) {
   .preview-wrapper {
     grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 0.1fr repeat(4, 1fr);
@@ -155,22 +117,5 @@ img.preview-image {
 
   .back-back {
     margin-left: 20px;
-  }
-}
-
-@media (min-width: 1040px) {
-  img.preview-image {
-    width: 339px;
-    height: 251px;
-  }
-
-  .preview-container,
-  .preview-button {
-    width: 339px;
-    height: 291px;
-  }
-
-  .preview-wrapper {
-    gap: 20px;
   }
 }
