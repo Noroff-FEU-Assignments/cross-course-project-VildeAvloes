@@ -12,7 +12,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  position: relative;
+  max-height: 100%;
 }
 
 .film-title {
@@ -60,29 +61,10 @@ img.film-image {
   margin: 10px;
 }
 
-@media (min-width: 500px) {
-  main {
-    height: 110vh;
-  }
+img.film-image {
+  max-width: 70%;
 }
 
-@media (min-width: 800px) {
-  main {
-    height: 120vh;
-  }
-
-  img.film-image {
-    width: 80%;
-    height: 80;
-  }
-
-  .film-info {
-    width: 60%;
-  }
-}
-
-@media (min-width: 1000px) {
-  main {
-    height: 140vh;
-  }
+.film-info {
+  max-width: 60%;
 }
