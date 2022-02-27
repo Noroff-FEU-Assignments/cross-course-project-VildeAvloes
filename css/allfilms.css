@@ -1,6 +1,6 @@
 .preview-container,
 .preview-button {
-  background: rgba(237, 237, 237, 0.97);
+  background: var(--opacity-light-grey);
   border-radius: 20px;
   height: 121px;
   width: 159px;
@@ -11,7 +11,7 @@
 }
 
 .preview-container a {
-  color: #2e2e2e;
+  color: var(--dark-grey);
   font-size: 1em;
   font-family: "Trebuchet MS", Helvetica, Verdana, Geneva, Tahoma, sans-serif;
 }

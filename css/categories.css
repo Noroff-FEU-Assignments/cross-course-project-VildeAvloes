@@ -1,6 +1,6 @@
 h1,
 h2 {
-  color: #ededed;
+  color: var(--light-grey);
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -9,13 +9,13 @@ h2 {
 .cta-cat {
   height: 55px;
   text-align: center;
-  background: radial-gradient(#a10e00, #510700);
+  background: var(--gradient-red);
 }
 
 .cta-cat:hover {
   font-size: 1.4;
-  background: radial-gradient(#a10e00, #510700);
-  color: #ededed;
+  background: var(--gradient-red);
+  color: var(--light-grey);
   border: none;
 }
 

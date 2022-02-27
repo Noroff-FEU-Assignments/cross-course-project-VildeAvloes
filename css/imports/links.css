@@ -3,14 +3,14 @@ a {
 }
 
 header a {
-  color: #ededed;
+  color: var(--light-grey);
   text-transform: uppercase;
   padding: 10px;
 }
 
 .cta {
-  background-color: #a10e00;
-  color: #ededed;
+  background-color: var(--red);
+  color: var(--light-grey);
   display: inline-block;
   text-align: center;
   width: 80px;
@@ -28,28 +28,28 @@ header a {
 }
 
 .cta:hover {
-  background-color: #ededed;
-  color: #a10e00;
+  background-color: var(--light-grey);
+  color: var(--red);
   border: 3px;
   border-style: solid;
-  border-color: #a10e00;
+  border-color: var(--red);
 }
 
 .cta-yellow {
-  background-color: #e86826;
-  color: #ededed;
+  background-color: var(--yellow);
+  color: var(--light-grey);
 }
 
 .cta-yellow:hover {
-  background-color: #ededed;
-  color: #e86826;
+  background-color: var(--light-grey);
+  color: var(--yellow);
   border: 3px;
   border-style: solid;
-  border-color: #e86826;
+  border-color: var(--yellow);
 }
 
 .link-style {
-  color: #e86826;
+  color: var(--yellow);
   font-style: italic;
   text-decoration: underline;
 }

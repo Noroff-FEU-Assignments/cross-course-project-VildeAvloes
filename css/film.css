@@ -1,0 +1,12 @@
+img.film-image {
+  width: 344px;
+  height: 229px;
+  border-radius: 20px;
+}
+
+.star-rating i {
+  color: var(--yellow);
+  display: flex;
+  flex-direction: row;
+  padding: 3px;
+}

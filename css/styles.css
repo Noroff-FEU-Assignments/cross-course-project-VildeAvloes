@@ -1,5 +1,6 @@
 @import "imports/links.css";
 @import "imports/forms.css";
+@import "imports/variables.css";
 
 .background-image {
   background-image: url(../images/home-background.jpg);
@@ -36,11 +37,11 @@ h3 {
 }
 
 i {
-  color: #ededed;
+  color: var(--light-grey);
 }
 
 i:hover {
-  color: #a10e00;
+  color: var(--red);
 }
 
 header {
@@ -57,7 +58,7 @@ nav {
   display: none;
   position: absolute;
   top: 96px;
-  background-color: #2e2e2e;
+  background-color: var(--dark-grey);
   z-index: 1000;
   right: 0px;
 }
@@ -77,11 +78,11 @@ nav ul {
 
 nav a {
   font-size: 20px;
-  color: #ededed;
+  color: var(--light-grey);
 }
 
 nav a:hover {
-  color: #a10e00;
+  color: var(--red);
 }
 
 #hamburger-menu {
@@ -99,8 +100,8 @@ nav a:hover {
 
 header,
 footer {
-  background-color: #2e2e2e;
-  color: #ededed;
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
 }
 
 footer {
@@ -109,10 +110,10 @@ footer {
 }
 
 .footer-light {
-  background-color: #6a6a6a;
+  background-color: var(--medium-grey);
 }
 .container {
-  background: rgba(237, 237, 237, 0.97);
+  background: var(--opacity-light-grey);
   border-radius: 20px;
   text-align: center;
   padding: 20px 30px;

@@ -22,7 +22,7 @@ h2 {
   flex: auto;
   margin-top: 20px;
   margin-left: 40px;
-  color: #ededed;
+  color: var(--light-grey);
 }
 
 .account-wrapper li {
@@ -32,14 +32,14 @@ h2 {
 }
 
 .account-wrapper a {
-  color: #ededed;
+  color: var(--light-grey);
   font-style: bold;
   font-size: 1.2em;
 }
 
 .account-wrapper a:hover {
   font-size: 1.6em;
-  color: #a10e00;
+  color: var(--red);
 }
 
 .account-list {

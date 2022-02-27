@@ -4,7 +4,7 @@ form {
 }
 
 input {
-  border: 2px solid #2e2e2e;
+  border: 2px solid var(--dark-grey);
   border-radius: 15px;
   margin: 0px 10px 10px 10px;
   padding: 10px;
@@ -33,7 +33,7 @@ input[type="text email password"],
 ::placeholder {
   font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.2em;
-  color: #2e2e2e;
+  color: var(--grey);
 }
 
 ::placeholder {
