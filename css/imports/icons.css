@@ -1,0 +1,40 @@
+i {
+  color: var(--light-grey);
+}
+
+i:hover {
+  color: var(--red);
+}
+
+.search-icon {
+  padding-left: 20px;
+  color: var(--dark-grey);
+}
+
+.search-icon:hover {
+  color: var(--red);
+}
+
+i.back-icon {
+  color: var(--light-grey);
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+i.star {
+  color: var(--yellow);
+}
+
+i.add-icon {
+  color: var(--dark-grey);
+}
+
+i.add-icon:hover {
+  color: var(--red);
+}
+
+@media (min-width: 700px) {
+  .back-icon {
+    margin-left: 20px;
+  }
+}

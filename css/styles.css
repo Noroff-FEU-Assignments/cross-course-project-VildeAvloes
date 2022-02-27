@@ -1,4 +1,5 @@
 @import "imports/links.css";
+@import "imports/icons.css";
 @import "imports/forms.css";
 @import "imports/variables.css";
 
@@ -11,6 +12,12 @@
 
 .background-color {
   background: var(--gradient-grey);
+  background-size: cover;
+  max-width: 100%;
+}
+
+main {
+  min-height: 100vh;
 }
 
 body {
@@ -34,14 +41,6 @@ nav a,
 h3 {
   font-family: var(--font-paragraph);
   font-style: italic;
-}
-
-i {
-  color: var(--light-grey);
-}
-
-i:hover {
-  color: var(--red);
 }
 
 .logo {

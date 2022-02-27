@@ -45,8 +45,6 @@ img.preview-image {
 
 .back-icon {
   grid-area: back-icon;
-  margin-left: 10px;
-  margin-top: 10px;
 }
 
 .film1 {
@@ -113,9 +111,5 @@ img.preview-image {
       ". film4 film5 film6 ."
       ". film7 film8 film9 ."
       ". film10 film11 film12 .";
-  }
-
-  .back-back {
-    margin-left: 20px;
   }
 }

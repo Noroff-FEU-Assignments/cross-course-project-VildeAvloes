@@ -26,15 +26,6 @@ input.search-input {
   margin: 0px;
 }
 
-.search-icon {
-  padding-left: 20px;
-  color: var(--dark-grey);
-}
-
-.search-icon:hover {
-  color: var(--red);
-}
-
 @media (min-width: 370px) {
   .search-input {
     font-size: 0.8em;
