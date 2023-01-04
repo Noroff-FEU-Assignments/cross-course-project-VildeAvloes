@@ -1,6 +1,4 @@
-.preview-container,
-.preview-button {
-  background: var(--opacity-light-grey);
+.preview-container {
   border-radius: 20px;
   width: 100%;
   height: 100%;

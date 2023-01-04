@@ -11,7 +11,7 @@
 }
 
 .background-color {
-  background: var(--gradient-grey);
+  background: var(--dark-grey);
   background-size: cover;
   max-width: 100%;
 }
@@ -113,9 +113,6 @@ footer {
   padding: 5px;
 }
 
-.footer-light {
-  background-color: var(--medium-grey);
-}
 .container {
   background: var(--opacity-light-grey);
   border-radius: 20px;
