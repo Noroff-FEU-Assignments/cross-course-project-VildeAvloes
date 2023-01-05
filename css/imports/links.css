@@ -13,9 +13,8 @@ header a {
   color: var(--light-grey);
   font-size: 1em;
   text-transform: uppercase;
-  border-radius: 15px;
+  border-radius: 5px;
   position: relative;
-  display: inline-block;
   padding: 15px 40px;
   box-sizing: content-box;
 }
@@ -28,7 +27,7 @@ header a {
 .cta:hover {
   background-color: var(--light-grey);
   color: var(--red);
-  border: 1px;
+  border: 2px;
   border-style: solid;
   border-color: var(--red);
 }
@@ -41,18 +40,38 @@ header a {
 .cta-yellow:hover {
   background-color: var(--light-grey);
   color: var(--yellow);
-  border: 3px;
+  border: 2px;
   border-style: solid;
   border-color: var(--yellow);
+}
+
+.cta-cat {
+  background: var(--gradient-red);
+  width: 60px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+}
+
+.cta-cat:hover {
+  font-size: 1.4em;
+  background: var(--gradient-red);
+  color: var(--light-grey);
+  border: none;
+  width: 65px;
+  height: 60px;
+}
+
+.button-wrapper {
+  padding: 10px;
 }
 
 @media (min-width: 440px) {
   .cta {
     padding: 15px 80px;
     font-size: 1.2em;
-  }
-
-  .button-wrapper {
-    margin-right: auto;
   }
 }
