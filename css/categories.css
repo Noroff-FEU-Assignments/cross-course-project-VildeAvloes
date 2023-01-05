@@ -14,17 +14,14 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-self: center;
+  justify-content: center;
 }
 
 .cta-cat:hover {
-  font-size: 1.4;
+  font-size: 1.4em;
   background: var(--gradient-red);
   color: var(--light-grey);
-  border: none;
-}
-
-text.cta-cat {
-  justify-self: center;
+  border-color: var(--light-grey);
 }
 
 .categories {

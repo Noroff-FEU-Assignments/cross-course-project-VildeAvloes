@@ -5,7 +5,7 @@ a {
 header a {
   color: var(--light-grey);
   text-transform: uppercase;
-  padding: 0.9em;
+  padding: 10px;
 }
 
 .cta {
@@ -13,10 +13,10 @@ header a {
   color: var(--light-grey);
   font-size: 1em;
   text-transform: uppercase;
-  border-radius: 0.9em;
+  border-radius: 15px;
   position: relative;
   display: inline-block;
-  padding: 0.9em 3em;
+  padding: 15px 40px;
   box-sizing: content-box;
 }
 
@@ -28,7 +28,7 @@ header a {
 .cta:hover {
   background-color: var(--light-grey);
   color: var(--red);
-  border: 0.1em;
+  border: 1px;
   border-style: solid;
   border-color: var(--red);
 }
@@ -41,24 +41,14 @@ header a {
 .cta-yellow:hover {
   background-color: var(--light-grey);
   color: var(--yellow);
-  border: 0.1em;
+  border: 3px;
   border-style: solid;
   border-color: var(--yellow);
 }
 
-.link-style {
-  color: var(--yellow);
-  font-style: italic;
-  text-decoration: underline;
-}
-
-.link-style:hover {
-  font-size: 1.1em;
-}
-
 @media (min-width: 440px) {
   .cta {
-    padding: 0.9em 5em;
+    padding: 15px 80px;
     font-size: 1.2em;
   }
 

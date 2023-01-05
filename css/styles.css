@@ -33,7 +33,6 @@ h2,
 nav a,
 .cta {
   font-family: var(--font-header);
-  font-style: bold;
   text-transform: uppercase;
   text-align: center;
 }
@@ -69,19 +68,15 @@ nav {
 
 nav li {
   display: block;
-  padding: 10px 5px;
+  padding: 15px 20px;
 }
 
 nav ul {
   padding: 0px;
 }
 
-.nav-right {
-  padding-top: 10px;
-}
-
 nav a {
-  font-size: 20px;
+  font-size: 1.3em;
   color: var(--light-grey);
 }
 
@@ -123,12 +118,8 @@ footer {
   width: 70%;
 }
 
-.text {
+.container-text {
   margin: auto;
-}
-
-.information {
-  margin: 5px;
   flex: 1;
 }
 
@@ -148,9 +139,13 @@ footer {
 
 @media (min-width: 690px) {
   header {
-    align-items: center;
+    align-items: flex-end;
     justify-content: flex-start;
-    height: 69px;
+    height: 75px;
+  }
+
+  header a {
+    padding: 0px;
   }
 
   header label {
@@ -165,34 +160,12 @@ footer {
 
   nav li {
     display: inline-block;
-    padding: 0px;
+    padding: 5px 15px;
   }
 
   nav ul {
     padding-left: 3px;
     margin-top: 1px;
     margin-bottom: 1px;
-  }
-
-  .nav-left,
-  .nav-right {
-    margin: 3px;
-  }
-}
-
-@media (min-width: 1000px) {
-  header {
-    align-items: center;
-  }
-
-  nav {
-    display: flex;
-    align-items: flex-end;
-    flex: auto;
-    justify-content: space-between;
-  }
-
-  .nav-right {
-    margin-left: auto;
   }
 }
