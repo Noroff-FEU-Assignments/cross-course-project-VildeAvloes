@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Square Eyes | Home</title>
+    <title>Square Eyes | Contact Us</title>
     <meta name="description" content="A place where you can upload your own films and watch other indie-filmakers films!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,18 +27,39 @@
     </header>
     <main>
       <div class="container">
-        <h1>Connecting Film-Lovers</h1>
-        <div class="container-text">
-          <p>
-            Discover entertaining quality films created by indie filmmakers from all over the world. <br />
-            Stream your next favourite film here on the Square Eyes channel.
-          </p>
+        <h1>Contact Us</h1>
+        <div class="container-text success-message">
+          <p>Please fill in the form and we'll get back to you as soon as possible.</p>
         </div>
-        <div class="button-wrapper">
-          <a href="categories.html" class="cta cta-large">Browse Films</a>
-        </div>
+        <form id="contactForm">
+          <div>
+            <label>
+              Name
+              <input name="name" id="name" />
+            </label>
+            <div class="error" id="nameError">Name is required.</div>
+          </div>
+          <div>
+            <label>
+              Email
+              <input name="email" id="email" />
+            </label>
+            <div class="error" id="emailError">Please enter a valid email address.</div>
+          </div>
+          <div>
+            <label>
+              Subject
+              <textarea name="subject" id="subject"></textarea>
+            </label>
+            <div class="error" id="subjectError">Must have the minimum of 20 characters.</div>
+          </div>
+          <div class="button-wrapper button-form">
+            <button class="cta cta-large">Submit</button>
+          </div>
+        </form>
       </div>
     </main>
     <footer>Copyright Square Eyes 2022 &copy;</footer>
+    <script src="js/contact.js" type="module"></script>
   </body>
 </html>

@@ -1,86 +1,67 @@
 form {
+  max-width: 1000px;
+  padding: 10px;
+  margin: 0px 20px;
   display: flex;
   flex-direction: column;
 }
 
-input {
+label {
+  display: block;
+  margin-top: 20px;
+  text-align: left;
+}
+
+input,
+textarea {
+  min-width: 250px;
+  padding: 10px;
+  margin-top: 25px;
   border: 2px solid var(--dark-grey);
-  border-radius: 15px;
-  margin: 0px 10px 10px 10px;
-  padding: 10px;
-  box-sizing: border-box;
+  border-radius: 5px;
 }
 
-.form__input {
-  width: 264px;
+textarea {
+  display: flex;
 }
 
-.form__inputsmall {
-  width: 130px;
-  margin: 0px 0px 10px 0px;
+.error {
+  display: none;
+  color: var(--red);
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: left;
 }
 
-input#expmonth,
-input#securitynumber {
-  margin: 0px;
+.message {
+  padding: 1em;
+  margin: 20px;
+  font-size: 1em;
+  text-align: center;
 }
 
-.input-small {
-  flex: row;
-}
-
-input[type="text email password"],
-::placeholder {
-  font-family: var(--font-paragraph);
+.success {
   font-size: 1.2em;
-  color: var(--grey);
+  color: darkgreen;
 }
 
-::placeholder {
-  text-transform: uppercase;
-}
-
-#expmonth,
-#securitynumber {
-  margin: 5px;
-}
-
-input[type="submit"] {
-  border: 0px;
-  width: 100px;
-  height: 25px;
-}
-
-.signin-form {
+.button-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-bottom: 10px;
-}
-
-.form-wrapper {
-  display: flex;
-  flex-flow: column wrap;
   align-items: center;
+  margin-top: 20px;
 }
 
-.payment-details {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.cta-form {
-  margin-top: 10px;
-}
-
-@media (max-width: 400px) {
-  .form__input {
-    width: 204px;
+@media (min-width: 485px) {
+  input,
+  textarea {
+    width: 100%;
+    max-width: 1000px;
   }
+}
 
-  .form__inputsmall {
-    width: 100px;
+@media (min-width: 600px) {
+  .error {
+    font-size: 1em;
   }
 }
