@@ -29,6 +29,7 @@ body {
 h1,
 h2,
 nav a,
+footer a,
 .cta {
   font-family: var(--font-header);
   text-transform: uppercase;
@@ -103,8 +104,10 @@ footer {
 }
 
 footer {
-  text-align: center;
-  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {

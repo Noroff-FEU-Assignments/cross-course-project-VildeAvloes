@@ -33,6 +33,9 @@ i.add-icon:hover {
   color: var(--red);
 }
 
+i.some-icon {
+  padding: 10px;
+}
 @media (min-width: 700px) {
   .back-icon {
     margin-left: 20px;
