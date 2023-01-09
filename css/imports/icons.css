@@ -11,33 +11,10 @@ i:hover {
   color: var(--dark-grey);
 }
 
-.search-icon:hover {
-  color: var(--red);
-}
-
-i.back-icon {
-  color: var(--light-grey);
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
 i.star {
   color: var(--yellow);
 }
 
-i.add-icon {
-  color: var(--dark-grey);
-}
-
-i.add-icon:hover {
-  color: var(--red);
-}
-
 i.some-icon {
   padding: 10px;
-}
-@media (min-width: 700px) {
-  .back-icon {
-    margin-left: 20px;
-  }
 }
