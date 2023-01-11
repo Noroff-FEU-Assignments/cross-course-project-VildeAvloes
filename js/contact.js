@@ -1,4 +1,6 @@
 import { displayMessage } from "./components/message.js";
+import { checkLength } from "./components/globals.js";
+import { validateEmail } from "./components/globals.js";
 
 const form = document.querySelector("#contactForm");
 const name = document.querySelector("#name");
@@ -37,13 +39,3 @@ function validateForm(event) {
 }
 
 form.addEventListener("submit", validateForm);
-
-function checkLength(value, len) {
-  return value.trim().length > len;
-}
-
-function validateEmail(email) {
-  const regEx = /\S+@\S+\.\S+/;
-  const patternMatches = regEx.test(email);
-  return patternMatches;
-}

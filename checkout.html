@@ -27,11 +27,12 @@
     </header>
     <main>
       <div class="container container-general">
-        <h1>Contact Us</h1>
+        <h1>Checkout</h1>
         <div class="container-text success-message">
-          <p>Please fill out your payment detail to proceed to the movie. An amout of 49NOK will be withdrawn from your card at purchase.</p>
+          <p>Please fill out your payment detail to proceed to the movie. An amount of 49NOK will be withdrawn from your card at purchase.</p>
         </div>
         <form id="checkoutForm">
+          <h2>Payment Details</h2>
           <div>
             <label>
               Name on card
@@ -53,22 +54,24 @@
             </label>
             <div class="error" id="cardnumberError">Must have the minimum of 12 numbers.</div>
           </div>
-          <div>
-            <label>
-              MM/YY
-              <input type="text" name="exp" id="exp" placeholder="XX/XX" />
-            </label>
-            <div class="error" id="expError">Must have 4 characters.</div>
-          </div>
-          <div>
-            <label>
-              CVV
-              <input type="text" name="cvv" id="cvv" placeholder="111" />
-            </label>
-            <div class="error" id="cvvError">Must have 3 characters.</div>
+          <div class="exp-validation">
+            <div>
+              <label class="small-input">
+                MM/YY
+                <input type="text" name="exp" id="exp" placeholder="XX/XX" />
+              </label>
+              <div class="error" id="expError">Must have 4 characters.</div>
+            </div>
+            <div>
+              <label class="small-input">
+                CVV
+                <input type="text" name="cvv" id="cvv" placeholder="111" />
+              </label>
+              <div class="error" id="cvvError">Must have 3 characters.</div>
+            </div>
           </div>
           <div class="button-wrapper button-form">
-            <button class="cta cta-large">Submit</button>
+            <button class="cta cta-large cta-yellow">Purchase</button>
           </div>
         </form>
       </div>
@@ -80,6 +83,6 @@
         <a href="index.html"><i class="fa-brands fa-facebook-square fa-2x some-icon"></i></a>
       </div>
     </footer>
-    <script src="js/contact.js" type="module"></script>
+    <script src="js/checkout.js" type="module"></script>
   </body>
 </html>

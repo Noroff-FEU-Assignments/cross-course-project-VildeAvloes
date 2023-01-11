@@ -69,4 +69,20 @@ textarea,
   .error {
     font-size: 1em;
   }
+
+  .exp-validation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .small-input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input#cvv,
+  input#exp {
+    min-width: 100px;
+  }
 }
