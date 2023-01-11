@@ -19,11 +19,6 @@ header a {
   box-sizing: content-box;
 }
 
-.cta-large {
-  width: 100px;
-  padding-top: 15px;
-}
-
 .cta:hover {
   background-color: var(--light-grey);
   color: var(--red);
@@ -82,6 +77,14 @@ header a {
 
 .back-button a:hover {
   color: var(--red);
+  text-decoration: underline;
+}
+
+.link {
+  color: var(--yellow);
+}
+
+.link:hover {
   text-decoration: underline;
 }
 

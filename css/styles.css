@@ -126,12 +126,16 @@ footer {
   padding: 15px;
 }
 
-.container-index {
+.container-small {
   margin: 150px auto 200px auto;
 }
 
-.container-general {
+.container-large {
   margin: 50px auto 90px auto;
+}
+
+.text-wrapper {
+  padding: 20px 0px;
 }
 
 @media (max-width: 600px) {
@@ -185,6 +189,6 @@ footer {
   }
 
   .container-text {
-    padding: 20px 80px;
+    padding: 0px 80px;
   }
 }
