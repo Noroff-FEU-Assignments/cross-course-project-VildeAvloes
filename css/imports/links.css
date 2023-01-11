@@ -2,7 +2,8 @@ a {
   text-decoration: none;
 }
 
-header a {
+header a,
+footer a {
   color: var(--light-grey);
   text-transform: uppercase;
   padding: 10px;

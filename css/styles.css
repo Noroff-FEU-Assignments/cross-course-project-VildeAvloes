@@ -93,8 +93,7 @@ nav a:hover {
   display: block;
 }
 
-.hamburger-icon,
-.nav-right {
+.hamburger-icon {
   padding-right: 15px;
 }
 
@@ -106,7 +105,7 @@ footer {
 
 footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }

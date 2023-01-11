@@ -11,6 +11,10 @@ i:hover {
   color: var(--dark-grey);
 }
 
+.some-icons {
+  padding: 10px 0px;
+}
+
 i.star {
   color: var(--yellow);
 }
