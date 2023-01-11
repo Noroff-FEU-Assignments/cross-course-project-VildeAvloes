@@ -2,6 +2,7 @@
   flex-flow: row;
   align-items: center;
   justify-content: space-between;
+  margin: 90px auto 90px auto;
 }
 
 .search-box {

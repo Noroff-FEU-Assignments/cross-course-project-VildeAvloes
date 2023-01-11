@@ -25,6 +25,11 @@ textarea {
   display: flex;
 }
 
+textarea,
+::placeholder {
+  font-family: var(--font-paragraph);
+}
+
 .error {
   display: none;
   color: var(--red);

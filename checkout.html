@@ -29,13 +29,13 @@
       <div class="container container-general">
         <h1>Contact Us</h1>
         <div class="container-text success-message">
-          <p>Please fill in the form and we'll get back to you as soon as possible.</p>
+          <p>Please fill out your payment detail to proceed to the movie. An amout of 49NOK will be withdrawn from your card at purchase.</p>
         </div>
-        <form id="contactForm">
+        <form id="checkoutForm">
           <div>
             <label>
-              Name
-              <input type="text" name="name" id="name" placeholder="Jane Mary Doe" />
+              Name on card
+              <input type="text" name="cardname" id="cardname" placeholder="Jane Doe" />
             </label>
             <div class="error" id="nameError">Name is required.</div>
           </div>
@@ -48,10 +48,24 @@
           </div>
           <div>
             <label>
-              Subject
-              <textarea type="text" name="subject" id="subject" placeholder="Write your subject here"></textarea>
+              Credit Card Number
+              <input type="text" name="cardnumber" id="cardnumber" placeholder="1111 2222 3333 4444" />
             </label>
-            <div class="error" id="subjectError">Must have the minimum of 20 characters.</div>
+            <div class="error" id="cardnumberError">Must have the minimum of 12 numbers.</div>
+          </div>
+          <div>
+            <label>
+              MM/YY
+              <input type="text" name="exp" id="exp" placeholder="XX/XX" />
+            </label>
+            <div class="error" id="expError">Must have 4 characters.</div>
+          </div>
+          <div>
+            <label>
+              CVV
+              <input type="text" name="cvv" id="cvv" placeholder="111" />
+            </label>
+            <div class="error" id="cvvError">Must have 3 characters.</div>
           </div>
           <div class="button-wrapper button-form">
             <button class="cta cta-large">Submit</button>

@@ -119,12 +119,19 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 90px auto 90px auto;
   width: 70%;
 }
 
 .container-text {
   padding: 15px;
+}
+
+.container-index {
+  margin: 150px auto 200px auto;
+}
+
+.container-general {
+  margin: 50px auto 90px auto;
 }
 
 @media (max-width: 600px) {
