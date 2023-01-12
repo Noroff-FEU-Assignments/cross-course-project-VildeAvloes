@@ -1,0 +1,27 @@
+.account-information {
+  display: flex;
+  flex-direction: column;
+  color: var(--light-grey);
+  align-items: center;
+  margin-top: 20px;
+}
+
+.account-information a {
+  font-family: var(--font-header);
+  color: var(--light-grey);
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+.account-information a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+.account-information h1 {
+  padding: 0px 15px 0px 0px;
+}
+
+.account-information i {
+  padding: 30px;
+}

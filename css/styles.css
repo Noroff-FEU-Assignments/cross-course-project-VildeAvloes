@@ -83,6 +83,7 @@ nav a {
 
 nav a:hover {
   color: var(--red);
+  text-decoration: underline;
 }
 
 #hamburger-menu {
@@ -151,7 +152,7 @@ footer {
   }
 }
 
-@media (min-width: 760px) {
+@media (min-width: 860px) {
   header {
     align-items: flex-end;
     justify-content: flex-start;

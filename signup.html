@@ -18,7 +18,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">All Films</a></li>
+          <li><a href="film-categories.html">All Films</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="search.html">Search</a></li>
@@ -29,7 +29,7 @@
     <main>
       <div class="container container-large">
         <h1>Sign Up</h1>
-        <form id="signupForm">
+        <form id="signupForm" method="post">
           <div>
             <label>
               Name
@@ -49,20 +49,21 @@
               Password
               <input type="password" name="password" id="password" placeholder="********" />
             </label>
-            <div class="error" id="nameError">Name is required.</div>
+            <div class="error" id="passwordError">Password must be 1 lowercase letter, 1 uppercase letter, 1 number, and be at least 8 characters long.</div>
           </div>
           <div class="button-wrapper button-form">
-            <button class="cta">Sign Up</button>
+            <button class="cta signup-button">Sign Up</button>
           </div>
         </form>
       </div>
     </main>
     <footer>
       <div>
-        <a href="index.html"><i class="fa-brands fa-twitter fa-2x some-icon"></i></a>
-        <a href="index.html"><i class="fa-brands fa-instagram fa-2x some-icon"></i></a>
-        <a href="index.html"><i class="fa-brands fa-facebook-square fa-2x some-icon"></i></a>
+        <a href="index.html"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <a href="index.html"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="index.html"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
       </div>
     </footer>
+    <script src="js/signup.js" type="module"></script>
   </body>
 </html>

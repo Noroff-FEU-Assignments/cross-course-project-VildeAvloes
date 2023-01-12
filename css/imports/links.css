@@ -16,7 +16,7 @@ footer a {
   text-transform: uppercase;
   border-radius: 5px;
   position: relative;
-  padding: 15px 40px;
+  padding: 15px 35px;
   box-sizing: content-box;
 }
 
@@ -53,7 +53,7 @@ footer a {
 }
 
 .cta-cat:hover {
-  font-size: 1.4em;
+  font-size: 1.2em;
   background: var(--gradient-red);
   color: var(--light-grey);
   border: none;
@@ -66,10 +66,10 @@ footer a {
 }
 
 .back-button {
-  margin-top: 15px;
+  margin: 15px 0px;
 }
 .back-button a {
-  font-size: 1.1em;
+  font-size: 0.9em;
   font-family: var(--font-header);
   color: var(--light-grey);
   text-transform: uppercase;
@@ -93,5 +93,13 @@ footer a {
   .cta {
     padding: 15px 80px;
     font-size: 1.2em;
+  }
+
+  .cta-cat:hover {
+    font-size: 1.2em;
+  }
+
+  .back-button a {
+    font-size: 1.1em;
   }
 }

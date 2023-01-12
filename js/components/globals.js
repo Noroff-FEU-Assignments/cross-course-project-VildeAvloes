@@ -7,3 +7,7 @@ export function validateEmail(email) {
   const emailPatternMatches = regEx.test(email);
   return emailPatternMatches;
 }
+
+export function myAccount() {
+  window.location.href = "account.html";
+}

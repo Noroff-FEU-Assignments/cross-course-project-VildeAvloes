@@ -18,7 +18,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="categories.html">All Films</a></li>
+          <li><a href="film-categories.html">All Films</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="search.html">Search</a></li>
@@ -30,9 +30,12 @@
       <div class="container container-large">
         <h1>Checkout</h1>
         <div class="container-text success-message">
-          <p>Please fill out your payment detail to proceed to the movie. An amount of 49NOK will be withdrawn from your card at purchase.</p>
+          <p>Please fill out your payment detail to proceed to the movie without an account. <br> An amount of 49NOK will be withdrawn from your card at purchase. <br>
+          <a href="signup.html" class="link">Sign up</a> to a free account <br> or <br>
+          <a href="signin.html" class="link">Sign In</a> to fetch payment details.</p>
+          <p</p>
         </div>
-        <form id="checkoutForm">
+        <form id="checkoutForm" method="post">
           <h2>Payment Details</h2>
           <div>
             <label>
@@ -51,9 +54,9 @@
           <div>
             <label>
               Credit Card Number
-              <input type="text" name="cardnumber" id="cardnumber" placeholder="1111 2222 3333 4444" />
+              <input type="text" name="cardnumber" id="cardnumber" placeholder="1111222233334444" />
             </label>
-            <div class="error" id="cardnumberError">Must have the minimum of 12 numbers.</div>
+            <div class="error" id="cardnumberError">Must have the format of a creditnumber (Visa, Mastercard or American Express).</div>
           </div>
           <div class="exp-validation">
             <div>
@@ -68,11 +71,11 @@
                 CVV
                 <input type="text" name="cvv" id="cvv" placeholder="111" />
               </label>
-              <div class="error" id="cvvError">Must have 3 characters.</div>
+              <div class="error" id="cvvError">Must have 3 or 4 numbers between 0-9.</div>
             </div>
           </div>
           <div class="button-wrapper button-form">
-            <button class="cta">Purchase</button>
+            <button class="cta purchase-button">Purchase</button>
           </div>
         </form>
       </div>

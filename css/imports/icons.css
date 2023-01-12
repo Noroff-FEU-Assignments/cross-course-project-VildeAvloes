@@ -6,19 +6,21 @@ i:hover {
   color: var(--red);
 }
 
-.search-icon {
-  padding-left: 20px;
-  color: var(--dark-grey);
-}
-
-.some-icons {
-  padding: 10px 0px;
-}
-
 i.star {
   color: var(--yellow);
 }
 
-i.some-icon {
-  padding: 10px;
+i.fa-user:hover {
+  color: var(--light-grey);
+}
+
+.fa-magnifying-glass {
+  padding-left: 20px;
+  color: var(--dark-grey);
+}
+
+.fa-twitter,
+.fa-instagram,
+.fa-facebook-square {
+  padding: 10px 0px;
 }
