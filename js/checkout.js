@@ -30,7 +30,7 @@ function validateForm(event) {
     emailError.style.display = "block";
     success = false;
   }
-  if (validateCardnumber(cardnumber.value) === true) {
+  if (validateCardNumber(cardnumber.value) === true) {
     cardnumberError.style.display = "none";
   } else {
     cardnumberError.style.display = "block";
@@ -55,24 +55,13 @@ function validateForm(event) {
 
 form.addEventListener("submit", validateForm);
 
-function validateCardnumber() {
-  let cardnumberValue = cardnumber.value;
-  let visaRegEx = /^4[0-9]{12}(?:[0-9]{3})?$/;
-  let mastercardRegEx = /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14})$/;
-  let amexpRegEx = /^3[47][0-9]{13}$/;
-  let isValid = false;
-
-  if (visaRegEx.test(cardnumberValue)) {
-    isValid = true;
-  } else if (mastercardRegEx.test(cardnumberValue)) {
-    isValid = true;
-  } else if (amexpRegEx.test(cardnumberValue)) {
-    isValid = true;
-  }
+function validateCardNumber(cardnumber) {
+  var regex = /^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/;
+  return regex.test(cardnumber.replaceAll(" ", ""));
 }
 
 function validateCvv(cvv) {
-  const cvvRegEx = /^[0-9]{3,4}$/;
+  let cvvRegEx = /^[0-9]{3,4}$/;
   const cvvPatternMatches = cvvRegEx.test(cvv);
   return cvvPatternMatches;
 }
