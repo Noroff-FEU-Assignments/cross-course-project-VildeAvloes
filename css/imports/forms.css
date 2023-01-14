@@ -30,24 +30,7 @@ textarea,
   font-family: var(--font-paragraph);
 }
 
-.error {
-  display: none;
-  color: var(--red);
-  font-size: 0.8em;
-  margin-top: 10px;
-  text-align: left;
-}
-
-.message {
-  font-size: 1em;
-  text-align: center;
-}
-
-.success {
-  color: darkgreen;
-}
-
-.button-form {
+.cta-form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,19 +46,6 @@ textarea,
 }
 
 @media (min-width: 600px) {
-  .message {
-    padding: 1em;
-    margin: 20px;
-  }
-
-  .success {
-    font-size: 1.2em;
-  }
-
-  .error {
-    font-size: 1em;
-  }
-
   .exp-validation {
     display: flex;
     flex-direction: row;

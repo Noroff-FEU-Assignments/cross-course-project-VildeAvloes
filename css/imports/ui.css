@@ -1,3 +1,45 @@
+/*Font Style*/
+h1,
+h2,
+h3,
+nav a,
+footer a,
+.back-link,
+.cta {
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+}
+
+h1 {
+  font-style: 1.3em;
+}
+
+h2 {
+  font-style: 1em;
+}
+
+h3 {
+  text-transform: none;
+  font-style: italic;
+  font-style: 0.9em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+nav a {
+  font-size: 1.2em;
+  color: var(--light-grey);
+}
+
+nav a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
 a {
   text-decoration: none;
 }
@@ -89,7 +131,28 @@ footer a {
   text-decoration: underline;
 }
 
+.error {
+  display: none;
+  color: var(--red);
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.message {
+  font-size: 1em;
+  text-align: center;
+}
+
+.success {
+  color: darkgreen;
+}
+
 @media (min-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+
   .cta {
     padding: 15px 80px;
     font-size: 1.2em;
@@ -101,5 +164,18 @@ footer a {
 
   .back-button a {
     font-size: 1.1em;
+  }
+
+  .message {
+    padding: 1em;
+    margin: 20px;
+  }
+
+  .success {
+    font-size: 1.2em;
+  }
+
+  .error {
+    font-size: 1em;
   }
 }

@@ -6,7 +6,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.categories {
+.categories-wrapper {
   display: grid;
   width: 100%;
   grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
@@ -110,7 +110,7 @@ h2 {
 }
 
 @media (min-width: 1050px) {
-  .categories {
+  .categories-wrapper {
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas:

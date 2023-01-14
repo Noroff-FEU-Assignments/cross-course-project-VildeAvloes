@@ -1,8 +1,9 @@
 @import "./imports/variables.css";
-@import "./imports/links.css";
+@import "./imports/ui.css";
 @import "./imports/icons.css";
 @import "./imports/forms.css";
 
+/*Genral styles*/
 .background-image {
   background-image: url(../images/home-background.jpg);
   background-size: cover;
@@ -17,30 +18,13 @@
 }
 
 main {
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 body {
   font-family: var(--font-paragraph);
-  min-height: 100vh;
+  min-height: 75vh;
   margin: 0px;
-}
-
-h1,
-h2,
-nav a,
-footer a,
-.back-link,
-.cta {
-  font-family: var(--font-header);
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0px;
-}
-
-h3 {
-  font-family: var(--font-paragraph);
-  font-style: italic;
 }
 
 img.logo {
@@ -76,16 +60,6 @@ nav ul {
   padding: 0px;
 }
 
-nav a {
-  font-size: 1.3em;
-  color: var(--light-grey);
-}
-
-nav a:hover {
-  color: var(--red);
-  text-decoration: underline;
-}
-
 #hamburger-menu {
   display: none;
 }
@@ -96,19 +70,6 @@ nav a:hover {
 
 .hamburger-icon {
   padding-right: 15px;
-}
-
-header,
-footer {
-  background-color: var(--dark-grey);
-  color: var(--light-grey);
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 .container {
@@ -138,18 +99,17 @@ footer {
   padding: 20px 0px;
 }
 
-@media (max-width: 600px) {
-  h1 {
-    font-size: 1.2em;
-  }
+header,
+footer {
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+}
 
-  h2 {
-    font-size: 1em;
-  }
-
-  h3 {
-    font-size: 0.9em;
-  }
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 860px) {
