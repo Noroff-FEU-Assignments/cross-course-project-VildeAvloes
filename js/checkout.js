@@ -1,6 +1,5 @@
 import { displayMessage } from "./components/message.js";
-import { checkLength } from "./components/globals.js";
-import { validateEmail } from "./components/globals.js";
+import { checkLength, validateEmail } from "./components/globals.js";
 
 const form = document.querySelector("#checkoutForm");
 const name = document.querySelector("#cardname");
@@ -12,7 +11,7 @@ const exp = document.querySelector("#exp");
 const expError = document.querySelector("#expError");
 const cvv = document.querySelector("#cvv");
 const cvvError = document.querySelector("#cvvError");
-const purchaseButton = document.querySelector(".purchase-button");
+const successMessage = document.querySelector(".success-message");
 
 function validateForm(event) {
   event.preventDefault();
@@ -49,7 +48,7 @@ function validateForm(event) {
     success = false;
   }
   if (success) {
-    console.log("YAY!");
+    console.log("yay");
   }
 }
 

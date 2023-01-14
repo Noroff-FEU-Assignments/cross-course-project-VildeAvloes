@@ -1,4 +1,4 @@
-import { checkLength, validateEmail, myAccount } from "./components/globals.js";
+import { checkLength, validateEmail, validatePassword, myAccount } from "./components/globals.js";
 
 const form = document.querySelector("#signupForm");
 const name = document.querySelector("#name");
@@ -37,9 +37,3 @@ function validateForm(event) {
 }
 
 form.addEventListener("submit", validateForm);
-
-function validatePassword(password) {
-  const passwordRegEx = /(?=(.*[0-9]))((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.{8,}$/;
-  const passwordPatternMatches = passwordRegEx.test(password);
-  return passwordPatternMatches;
-}

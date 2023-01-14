@@ -1,6 +1,5 @@
 import { displayMessage } from "./components/message.js";
-import { checkLength } from "./components/globals.js";
-import { validateEmail } from "./components/globals.js";
+import { checkLength, validateEmail } from "./components/globals.js";
 
 const form = document.querySelector("#contactForm");
 const name = document.querySelector("#name");
