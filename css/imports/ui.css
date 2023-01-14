@@ -1,60 +1,7 @@
-/*Font Style*/
-h1,
-h2,
-h3,
-nav a,
-footer a,
-.back-link,
-.cta {
-  font-family: var(--font-header);
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0px;
-}
-
-h1 {
-  font-style: 1.3em;
-}
-
-h2 {
-  font-style: 1em;
-}
-
-h3 {
-  text-transform: none;
-  font-style: italic;
-  font-style: 0.9em;
-}
-
-p {
-  font-size: 0.8em;
-}
-
-nav a {
-  font-size: 1.2em;
-  color: var(--light-grey);
-}
-
-nav a:hover {
-  color: var(--red);
-  text-decoration: underline;
-}
-
-a {
-  text-decoration: none;
-}
-
-header a,
-footer a {
-  color: var(--light-grey);
-  text-transform: uppercase;
-  padding: 10px;
-}
-
+/*CTA*/
 .cta {
   background-color: var(--red);
   color: var(--light-grey);
-  font-size: 1em;
   text-transform: uppercase;
   border-radius: 5px;
   position: relative;
@@ -65,11 +12,8 @@ footer a {
 .cta:hover {
   background-color: var(--light-grey);
   color: var(--red);
-  border: 2px;
-  border-style: solid;
-  border-color: var(--red);
+  border: 2px solid var(--red);
 }
-
 .cta-yellow {
   background-color: var(--yellow);
   color: var(--light-grey);
@@ -78,31 +22,10 @@ footer a {
 .cta-yellow:hover {
   background-color: var(--light-grey);
   color: var(--yellow);
-  border: 2px;
-  border-style: solid;
-  border-color: var(--yellow);
+  border: 2px solid var(--yellow);
 }
 
-.cta-cat {
-  background: var(--gradient-red);
-  width: 60px;
-  height: 55px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-self: center;
-  justify-content: center;
-}
-
-.cta-cat:hover {
-  font-size: 1.2em;
-  background: var(--gradient-red);
-  color: var(--light-grey);
-  border: none;
-  width: 65px;
-  height: 60px;
-}
-
+/*Buttons*/
 .button-wrapper {
   padding: 20px 0px;
 }
@@ -110,20 +33,11 @@ footer a {
 .back-button {
   margin: 15px 0px;
 }
-.back-button a {
-  font-size: 0.9em;
-  font-family: var(--font-header);
-  color: var(--light-grey);
-  text-transform: uppercase;
-  margin-left: 30px;
-}
 
-.back-button a:hover {
-  color: var(--red);
-  text-decoration: underline;
-}
-
+/*Links*/
 .link {
+  font-family: var(--font-paragraph);
+  text-transform: none;
   color: var(--yellow);
 }
 
@@ -131,16 +45,17 @@ footer a {
   text-decoration: underline;
 }
 
+/*Message*/
 .error {
   display: none;
   color: var(--red);
-  font-size: 0.8em;
+  font-size: 0.9em;
   margin-top: 10px;
   text-align: left;
 }
 
 .message {
-  font-size: 1em;
+  font-size: 0.9em;
   text-align: center;
 }
 
@@ -149,30 +64,19 @@ footer a {
 }
 
 @media (min-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
-
   .cta {
     padding: 15px 80px;
     font-size: 1.2em;
   }
 
-  .cta-cat:hover {
-    font-size: 1.2em;
-  }
-
-  .back-button a {
-    font-size: 1.1em;
+  .back-button {
+    margin-left: 30px;
   }
 
   .message {
-    padding: 1em;
+    font-size: 1em;
+    padding: 15px;
     margin: 20px;
-  }
-
-  .success {
-    font-size: 1.2em;
   }
 
   .error {

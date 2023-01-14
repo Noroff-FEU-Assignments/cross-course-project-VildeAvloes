@@ -1,0 +1,73 @@
+/*General Text Styles*/
+h1,
+h2,
+h3,
+a,
+.cta {
+  font-family: var(--font-header);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+}
+
+a,
+button {
+  text-decoration: none;
+  font-size: 1.2;
+}
+
+h1 {
+  font-style: 2em;
+}
+
+h2 {
+  font-style: 1.5em;
+}
+
+h3 {
+  text-transform: none;
+  font-style: italic;
+  font-style: 1.2em;
+}
+
+p,
+link {
+  font-size: 1em;
+}
+
+nav a {
+  font-size: 1.3em;
+}
+
+nav a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
+header a,
+footer a {
+  color: var(--light-grey);
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  h3,
+  a,
+  button {
+    font-size: 1em;
+  }
+
+  p,
+  link {
+    font-size: 0.9em;
+  }
+}

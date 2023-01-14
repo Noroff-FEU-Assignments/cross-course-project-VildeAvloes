@@ -6,6 +6,30 @@ h2 {
   margin-bottom: 20px;
 }
 
+.header-cat2 h2 {
+  font-size: 2em;
+}
+
+.cta-cat {
+  background: var(--gradient-red);
+  width: 60px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+}
+
+.cta-cat:hover {
+  font-size: 1.1em;
+  background: var(--gradient-red);
+  color: var(--light-grey);
+  border: none;
+  width: 65px;
+  height: 60px;
+}
+
 .categories-wrapper {
   display: grid;
   width: 100%;
@@ -99,13 +123,16 @@ h2 {
   grid-area: product16;
 }
 
-@media (max-width: 550px) {
-  h1 {
+@media (max-width: 600px) {
+  h1,
+  .header-cat2 h2 {
     font-size: 1.2em;
   }
+}
 
-  .cta {
-    font-size: 1em;
+@media (min-width: 600px) {
+  .cta-cat:hover {
+    font-size: 1.3em;
   }
 }
 
