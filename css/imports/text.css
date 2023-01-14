@@ -31,7 +31,9 @@ h3 {
 }
 
 p,
-link {
+link,
+input,
+textarea {
   font-size: 1em;
 }
 
@@ -67,7 +69,9 @@ footer a {
   }
 
   p,
-  link {
+  link,
+  input,
+  textarea {
     font-size: 0.9em;
   }
 }

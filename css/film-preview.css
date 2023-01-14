@@ -51,7 +51,7 @@ img.film-image {
 
 @media (min-width: 500px) {
   main {
-    min-height: 100vh;
+    min-height: 105vh;
   }
 
   img.film-image {

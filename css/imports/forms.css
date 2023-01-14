@@ -4,6 +4,7 @@ form {
   margin: 0px 20px;
   display: flex;
   flex-direction: column;
+  font-family: var(--font-paragraph);
 }
 
 label {
@@ -25,6 +26,7 @@ textarea {
   display: flex;
 }
 
+input,
 textarea,
 ::placeholder {
   font-family: var(--font-paragraph);

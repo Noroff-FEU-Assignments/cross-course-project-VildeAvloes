@@ -39,7 +39,7 @@
 .error {
   display: none;
   color: var(--red);
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-top: 10px;
   text-align: left;
 }
@@ -66,6 +66,6 @@
   }
 
   .error {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
