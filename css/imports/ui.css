@@ -14,16 +14,6 @@
   color: var(--red);
   border: 2px solid var(--red);
 }
-.cta-yellow {
-  background-color: var(--yellow);
-  color: var(--light-grey);
-}
-
-.cta-yellow:hover {
-  background-color: var(--light-grey);
-  color: var(--yellow);
-  border: 2px solid var(--yellow);
-}
 
 /*Buttons*/
 .button-wrapper {
@@ -38,7 +28,7 @@
 .link {
   font-family: var(--font-paragraph);
   text-transform: none;
-  color: var(--yellow);
+  color: var(--red);
 }
 
 .link:hover {
