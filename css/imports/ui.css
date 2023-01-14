@@ -21,7 +21,7 @@
 }
 
 .back-button {
-  margin: 15px 0px;
+  margin: 15px 0px 15px 30px;
 }
 
 /*Links*/
@@ -57,10 +57,6 @@
   .cta {
     padding: 15px 80px;
     font-size: 1.2em;
-  }
-
-  .back-button {
-    margin-left: 30px;
   }
 
   .message {
