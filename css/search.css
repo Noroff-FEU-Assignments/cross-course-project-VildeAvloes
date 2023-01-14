@@ -11,6 +11,10 @@
   padding: 10px 50px;
 }
 
+.cta-search:hover {
+  padding: 8px 48px;
+}
+
 input.search-input {
   margin-top: 0px;
 }
