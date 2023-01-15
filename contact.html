@@ -29,42 +29,44 @@
     <main>
       <div class="container container-large">
         <h1>Contact Us</h1>
-        <div class="container-text success-message">
-          <p>Please fill in the form and we'll get back to you as soon as possible.</p>
+        <div class="success-message">
+          <div class="container-text">
+            <p>Please fill in the form and we'll get back to you as soon as possible.</p>
+          </div>
+          <form id="contactForm">
+            <div>
+              <label>
+                Name
+                <input type="text" name="name" id="name" placeholder="Jane Mary Doe" />
+              </label>
+              <div class="error" id="nameError">Name is required.</div>
+            </div>
+            <div>
+              <label>
+                Email
+                <input type="text" name="email" id="email" placeholder="janedoe@example.com" />
+              </label>
+              <div class="error" id="emailError">Please enter a valid email address.</div>
+            </div>
+            <div>
+              <label>
+                Subject
+                <textarea type="text" name="subject" id="subject" placeholder="Write your subject here"></textarea>
+              </label>
+              <div class="error" id="subjectError">Must have the minimum of 20 characters.</div>
+            </div>
+            <div class="button-wrapper cta-form">
+              <button class="cta">Submit</button>
+            </div>
+          </form>
         </div>
-        <form id="contactForm">
-          <div>
-            <label>
-              Name
-              <input type="text" name="name" id="name" placeholder="Jane Mary Doe" />
-            </label>
-            <div class="error" id="nameError">Name is required.</div>
-          </div>
-          <div>
-            <label>
-              Email
-              <input type="text" name="email" id="email" placeholder="janedoe@example.com" />
-            </label>
-            <div class="error" id="emailError">Please enter a valid email address.</div>
-          </div>
-          <div>
-            <label>
-              Subject
-              <textarea type="text" name="subject" id="subject" placeholder="Write your subject here"></textarea>
-            </label>
-            <div class="error" id="subjectError">Must have the minimum of 20 characters.</div>
-          </div>
-          <div class="button-wrapper cta-form">
-            <button class="cta">Submit</button>
-          </div>
-        </form>
       </div>
     </main>
     <footer>
       <div>
-        <a href="index.html"><i class="fa-brands fa-twitter fa-2x some-icon"></i></a>
-        <a href="index.html"><i class="fa-brands fa-instagram fa-2x some-icon"></i></a>
-        <a href="index.html"><i class="fa-brands fa-facebook-square fa-2x some-icon"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter fa-2x"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram fa-2x"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-square fa-2x"></i></a>
       </div>
     </footer>
     <script src="js/contact.js" type="module"></script>

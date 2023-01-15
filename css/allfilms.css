@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.preview-wrapper h1 {
+  color: var(--light-grey);
+}
+
 .card-wrapper,
 .card {
   background-color: var(--light-grey);

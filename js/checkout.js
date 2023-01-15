@@ -48,7 +48,7 @@ function validateForm(event) {
     success = false;
   }
   if (success) {
-    console.log("yay");
+    successMessage.innerHTML = displayMessage("success", "You payment was successfull! You will soon be directed to the movie.") + `<div class="loader"></div>`;
   }
 }
 
