@@ -110,6 +110,10 @@ img.preview-image {
   .card-wrapper a {
     font-size: 0.8em;
   }
+
+  .card-wrapper a:hover {
+    font-size: 0.9em;
+  }
 }
 
 @media (min-width: 820px) {
