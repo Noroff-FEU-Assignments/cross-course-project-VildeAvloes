@@ -114,7 +114,7 @@ footer {
   justify-content: center;
 }
 
-@media (min-width: 860px) {
+@media (min-width: 880px) {
   header {
     align-items: flex-end;
     justify-content: flex-start;
