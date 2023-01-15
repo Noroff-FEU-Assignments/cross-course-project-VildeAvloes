@@ -57,7 +57,7 @@ textarea,
   .exp-validation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .small-input {
@@ -68,5 +68,6 @@ textarea,
   input#cvv,
   input#exp {
     min-width: 100px;
+    max-width: 40px;
   }
 }
