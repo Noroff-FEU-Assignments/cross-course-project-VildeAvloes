@@ -1,18 +1,19 @@
+import { url } from "./components/constants.js";
 import { displayMessage } from "./components/message.js";
 
 const detailsContainer = document.querySelector(".film-details");
-// const queryString = document.location.search;
-// const params = new URLSearchParams(queryString);
-// const id = params.get("id");
-// console.log(id);
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
+console.log(id);
 
-const url = "https://vilde-avlos.no/square-eyes/wp-json/wc/store/products/25";
+const detailsUrl = url + id;
 
-console.log(url);
+console.log(detailsUrl);
 
 async function getFilmDetails() {
   try {
-    const response = await fetch(url);
+    const response = await fetch(detailsUrl);
     const details = await response.json();
 
     console.log(details);
@@ -34,7 +35,7 @@ function createHTML(details) {
                                   </div>
                                   <div class="film-wrapper">
                                     <img src=${details.images[1].src}
-                                    alt="" class="film-image" />
+                                    alt="${details.images[1].alt}" class="film-image" />
                                       <div class="container film-info">
                                         <p>${details.description}</p>
                                         <p>Price: ${details.prices.price} ${details.prices.currency_code}</p>
