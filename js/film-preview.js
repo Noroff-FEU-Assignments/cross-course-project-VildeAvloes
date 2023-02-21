@@ -1,6 +1,7 @@
 import { displayMessage } from "./components/message.js";
 
-{/* <div class="film-title">
+{
+  /* <div class="film-title">
         <h1>Stairway To Heaven</h1>
         <h2>By Zed Lepplin</h2>
         <h3>Drama</h3>
@@ -23,7 +24,8 @@ import { displayMessage } from "./components/message.js";
             <a href="checkout.html" class="cta">Watch Now</a>
           </div>
         </div>
-      </div>*/}
+      </div>*/
+}
 
 const detailsContainer = document.querySelector(".film-details");
 const queryString = document.location.search;
@@ -36,33 +38,28 @@ const url = "https://vilde-avlos.no/square-eyes/wp-json/wc/store/products/" + id
 console.log(url);
 
 async function getFilm() {
-    
-    try {
-        const response = await fetch(url);
-        const filmDetails = await response.json();
+  try {
+    const response = await fetch(url);
+    const filmDetails = await response.json();
 
-        console.log(filmDetails);
-        
-        createHTML(filmDetails);
-    }
+    console.log(filmDetails);
 
-    catch(error) {
-        detailsContainer.innerHTML = displayMessage("error", "Oh no, couldn't fetch film details..");
-    }
+    createHTML(filmDetails);
+  } catch (error) {
+    detailsContainer.innerHTML = displayMessage("error", "Oh no, couldn't fetch film details..");
+  }
 }
 
 getFilm();
 
-
-function createHTML(filmDetails){
-    filmDetails.forEach(function(details){
-        detailsContainer.innerHTML +=   
-        `<div class="film-title">
+function createHTML(filmDetails) {
+  filmDetails.forEach(function (details) {
+    detailsContainer.innerHTML += `<div class="film-title">
             <h1>${details.name}</h1>
             <h2>${details.attributes[0].terms[0].name}</h2>
             <h3>${details.tags.name}</h3>
-          </div>`
-    })
+          </div>`;
+  });
 }
 
 // function createHTML(filmDetails) {
@@ -75,5 +72,5 @@ function createHTML(filmDetails){
 //     <h2>${details.attributes[0].terms[0].name}</h2>
 //     <h3>${details.tags.name}</h3>
 //   </div>`
-    
+
 // }

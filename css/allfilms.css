@@ -47,8 +47,7 @@ img.preview-image {
   gap: 15px;
   padding: 30px;
   justify-content: center;
-} 
-
+}
 
 @media (max-width: 400px) {
   .card-wrapper a {
@@ -60,10 +59,8 @@ img.preview-image {
   }
 }
 
-@media (min-width: 880px){
-.film-results {
-  grid-template-columns: 1fr 1fr 1fr;
-
-}
-
+@media (min-width: 880px) {
+  .film-results {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

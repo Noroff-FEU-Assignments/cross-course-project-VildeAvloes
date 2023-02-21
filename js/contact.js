@@ -33,7 +33,10 @@ function validateForm(event) {
     success = false;
   }
   if (success) {
-    successMessage.innerHTML = displayMessage("success", "The form was successfully submitted. We'll be in touch as soon as possible. Have a nice day!");
+    successMessage.innerHTML = displayMessage(
+      "success",
+      "The form was successfully submitted. We'll be in touch as soon as possible. Have a nice day!"
+    );
   }
 }
 
