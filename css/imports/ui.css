@@ -72,6 +72,10 @@ button {
   margin-top: 20px;
 }
 
+.results-loader {
+  grid-column-start: 2;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
