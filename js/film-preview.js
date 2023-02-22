@@ -15,10 +15,40 @@ async function getFilmDetails() {
   try {
     const response = await fetch(detailsUrl);
     const details = await response.json();
+    const genres = details.tags;
 
     console.log(details);
 
-    createHTML(details);
+    console.log(details.tags);
+
+    detailsContainer.innerHTML = "";
+
+    genres.forEach(function (genre) {
+      let filmGenres = genre.name;
+      console.log(filmGenres);
+    });
+
+    // for (var i = 0; i < genres.length; i++) {
+    //   console.log(genres[i].name);
+    // }
+
+    detailsContainer.innerHTML += `<div class="film-title">
+                                        <h1>${details.name}</h1>
+                                        <h2>${details.attributes[0].terms[0].name}</h2>
+                                        <h3>${details.filmGenres}</h3>
+                                      </div>
+                                      <div class="film-wrapper">
+                                        <img src=${details.images[1].src}
+                                        alt="${details.images[1].alt}" class="film-image" />
+                                          <div class="container film-info">
+                                            <p>${details.description}</p>
+                                            <p>Price: ${details.prices.price} ${details.prices.currency_code}</p>
+    
+                                              <div class="button-wrapper__film">
+                                          <a href="checkout.html" class="cta">Watch Now</a>
+                                              </div>
+                                          </div>
+                                      </div>`;
   } catch (error) {
     console.log(error);
     detailsContainer.innerHTML = displayMessage("error", "Oh no, couldn't fetch film details..");
@@ -26,23 +56,3 @@ async function getFilmDetails() {
 }
 
 getFilmDetails();
-
-function createHTML(details) {
-  detailsContainer.innerHTML += `<div class="film-title">
-                                    <h1>${details.name}</h1>
-                                    <h2>${details.attributes[0].terms[0].name}</h2>
-                                    <h3>${details.attributes[1].terms[1].name}</h3>
-                                  </div>
-                                  <div class="film-wrapper">
-                                    <img src=${details.images[1].src}
-                                    alt="${details.images[1].alt}" class="film-image" />
-                                      <div class="container film-info">
-                                        <p>${details.description}</p>
-                                        <p>Price: ${details.prices.price} ${details.prices.currency_code}</p>
-                                        
-                                          <div class="button-wrapper__film">
-                                      <a href="checkout.html" class="cta">Watch Now</a>
-                                          </div>
-                                      </div>
-                                  </div>`;
-}
