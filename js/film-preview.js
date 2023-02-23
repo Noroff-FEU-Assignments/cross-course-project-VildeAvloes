@@ -26,7 +26,7 @@ async function getFilmDetails() {
     detailsContainer.innerHTML += `<div class="film-title">
                                         <h1>${details.name}</h1>
                                         <h2>${details.attributes[0].terms[0].name}</h2>
-                                        <h3>${filmGenres}</h3>
+                                        <h3>${filmGenres.join(", ")}</h3>
                                       </div>
                                       <div class="film-wrapper">
                                         <img src=${details.images[1].src}
@@ -34,7 +34,9 @@ async function getFilmDetails() {
                                           <div class="container film-info">
                                             <p>${details.description}</p>
                                               <div class="button-wrapper__film">
-                                          <a href="checkout.html" class="cta">Watch Now for ${details.prices.price} ${details.prices.currency_code}</a>
+                                          <a href="checkout.html" class="cta">Watch Now for ${
+                                            details.prices.price
+                                          } ${details.prices.currency_code}</a>
                                               </div>
                                           </div>
                                       </div>`;
