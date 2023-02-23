@@ -1,6 +1,7 @@
 import { url } from "./components/constants.js";
 import { displayMessage } from "./components/message.js";
 
+const titleContainer = document.querySelector("title");
 const detailsContainer = document.querySelector(".film-details");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -23,6 +24,7 @@ async function getFilmDetails() {
       return genre.name;
     });
 
+    titleContainer.innerHTML += `Square Eyes | ${details.name}`;
     detailsContainer.innerHTML += `<div class="film-title">
                                         <h1>${details.name}</h1>
                                         <h2>${details.attributes[0].terms[0].name}</h2>
