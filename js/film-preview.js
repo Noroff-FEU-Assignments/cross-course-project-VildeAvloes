@@ -6,11 +6,8 @@ const detailsContainer = document.querySelector(".film-details");
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-console.log(id);
 
 const detailsUrl = url + id;
-
-console.log(detailsUrl);
 
 async function getFilmDetails() {
   try {
@@ -43,7 +40,6 @@ async function getFilmDetails() {
                                           </div>
                                       </div>`;
   } catch (error) {
-    console.log(error);
     detailsContainer.innerHTML = `<div class="container"> ${displayMessage(
       "error",
       "Oh no, couldn't fetch film details.."

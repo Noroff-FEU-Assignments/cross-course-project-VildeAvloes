@@ -6,8 +6,6 @@ async function getFilms() {
     const response = await fetch(url);
     const filmResults = await response.json();
 
-    console.log(filmResults);
-
     filmResultsContainer.innerHTML = "";
 
     filmResults.forEach(function (film) {
@@ -18,7 +16,6 @@ async function getFilms() {
                                           </div>`;
     });
   } catch (error) {
-    console.log(error);
     filmResultsContainer.innerHTML = `<div class="container"> ${displayMessage(
       "error",
       "Oh no, couldn't fetch films.."
