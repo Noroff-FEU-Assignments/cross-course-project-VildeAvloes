@@ -44,7 +44,10 @@ async function getFilmDetails() {
                                       </div>`;
   } catch (error) {
     console.log(error);
-    detailsContainer.innerHTML = displayMessage("error", "Oh no, couldn't fetch film details..");
+    detailsContainer.innerHTML = `<div class="container"> ${displayMessage(
+      "error",
+      "Oh no, couldn't fetch film details.."
+    )}</div>`;
   }
 }
 

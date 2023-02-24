@@ -19,6 +19,10 @@ async function getFilms() {
     });
   } catch (error) {
     console.log(error);
+    filmResultsContainer.innerHTML = `<div class="container"> ${displayMessage(
+      "error",
+      "Oh no, couldn't fetch films.."
+    )}</div>`;
   }
 }
 
