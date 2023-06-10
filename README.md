@@ -33,7 +33,7 @@ You only need to clone the project and you can do that with the method you prefe
 ### Running
 The project can be run locally with the «Live Server»-extension that you can download in VS Code.
 
-You can also have a live view of the page after pushing edits [here](https://aesthetic-frangollo-28a904.netlify.app/).
+You can also have a live view of the page after pushing edits [here](https://wizardly-nightingale-4f0c9d.netlify.app/).
 
 
 ## Contributing
