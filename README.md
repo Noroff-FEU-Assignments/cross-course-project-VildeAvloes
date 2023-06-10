@@ -1,4 +1,4 @@
-### Square Eyes
+# Square Eyes
 ## *Cross Course Project*
 ![A screenshot of the front page of Square Eyes. The page with a covering image of a movie theatre with welcome-text on top of it with a nav menu on the top of the page.](./images/Square-Eyes.png).
 
