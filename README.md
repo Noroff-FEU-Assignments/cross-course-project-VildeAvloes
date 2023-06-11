@@ -3,7 +3,7 @@
 ![A screenshot of the front page of Square Eyes. The page with a covering image of a movie theatre with welcome-text on top of it with a nav menu on the top of the page.](./images/Square-Eyes.png).
 
 ## Description
-This is a fictional site for streaming indie films on a site called Square Eyes. I made this project throughout the Design, HTML, CSS and JavaScript course, and therefore it’s my first Cross Course Project at the front-end-developer program at Noroff Fagskole. 
+This is a fictional site for streaming indie films on a site called Square Eyes. I made this project throughout the Design, HTML, CSS and JavaScript course, and therefore it’s my first Cross Course Project at the front-end-developer program at Noroff Fagskole. The website contains of 11 HTML-pages and I have used Netlify for hosting the site. 
 The aim for this project was to show my skills in:
 - Design
 - HTML 
@@ -15,10 +15,10 @@ The aim for this project was to show my skills in:
 * HTML5
 * CSS
 * JavaScript
-* WordPress REST API (headless mode)
+* WordPress REST API
 
 ### API
-I have used the WordPress Rest API in a headless mode to fetch the film sites.
+I have used the WordPress Rest API in a headless mode to fetch the film sites. I have used one.com to host the WordPress API. 
 
 
 ## Getting Started
