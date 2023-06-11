@@ -27,8 +27,8 @@ This is no need for installation. This project is running without dependencies.
 You only need to clone the project and you can do that with the method you prefer: 
 - Through commands: `git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-VildeAvloes`
 -  Through Github
-    -  First option: Clone > Open with GitHub Desktop > save and open in your preferred code editoror
-    -  Second option: Clone > Download Zip > Save and open in preferred code editor
+    -  First option: Clone > Open with GitHub Desktop > save and open in your preferred code editor. 
+    -  Second option: Clone > Download Zip > Save and open in preferred code editor.
 
 ### Running
 The project can be run locally with the «Live Server»-extension that you can download in VS Code.
